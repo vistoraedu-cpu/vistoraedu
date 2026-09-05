@@ -639,8 +639,8 @@ tbody tr:last-child td{border-bottom:0}
 ===================================================================== */
 
 const CONFIG = {
-  whatsapp : '+91 99464 39474',             // ← REPLACE with the real WhatsApp number
-  phone    : '+91 99464 39474',          // ← REPLACE
+  whatsapp : '+9199464 39474',             // ← REPLACE with the real WhatsApp number
+  phone    : '+9199464 39474',          // ← REPLACE
   email    : 'vistoraedu@gmail.com',     // ← REPLACE
   instagram: 'https://instagram.com/vistoraedu', // ← REPLACE
   facebook : 'https://facebook.com/vistoraedu'   // ← REPLACE
@@ -737,17 +737,6 @@ const COURSES = [
 const COURSE_CAT={btech:'Engineering',mbbs:'Medicine',nursing:'Nursing & Allied Health',allied:'Nursing & Allied Health',cse:'Computer Science & IT',bca:'Computer Science & IT',ds:'Computer Science & IT',bcom:'Commerce & Finance',ca:'Commerce & Finance',bba:'Management',barch:'Design & Architecture',bdes:'Design & Architecture',ballb:'Law',ba:'Arts & Humanities',media:'Media & Communication'};
 const COURSE_ICON={btech:'tool',barch:'pentool',mbbs:'heart',nursing:'heart',allied:'heart',cse:'monitor',bca:'monitor',ds:'monitor',bcom:'trend',ca:'trend',bba:'briefcase',bdes:'pentool',ballb:'scale',ba:'bookopen',media:'mic'};
 
-/* College sample entries — CLEARLY MARKED PLACEHOLDERS. Replace with verified data. */
-const COLLEGES = [
- {id:'c1',name:'Sample College of Engineering',district:'Thiruvananthapuram',city:'Thiruvananthapuram',type:'Government',admission:'KEAM',courses:['B.Tech — CSE','B.Tech — ECE','B.Tech — Mechanical','B.Tech — Civil'],eligibility:'10+2 PCM · KEAM rank',fee:'≈ ₹35,000 / year (indicative)',band:'mid',about:'A sample engineering institution entry demonstrating how verified college information will appear — location, courses, eligibility and indicative fees.',facilities:['Central Library','Hostels','Labs & Workshops','Placement Cell']},
- {id:'c2',name:'Sample Medical College',district:'Kozhikode',city:'Kozhikode',type:'Government',admission:'NEET-UG',courses:['MBBS','B.Sc Nursing','B.Sc MLT'],eligibility:'10+2 PCB · NEET qualification',fee:'≈ ₹25,000 / year (indicative)',band:'mid',about:'A sample medical institution entry. Medical admissions in Kerala run through NEET counselling — your counsellor will walk you through the exact process for the current year.',facilities:['Teaching Hospital','Hostels','Research Wings']},
- {id:'c3',name:'Sample Nursing College',district:'Ernakulam',city:'Kochi',type:'Private',admission:'Institution / Merit',courses:['B.Sc Nursing','B.Sc MLT','B.Pharm'],eligibility:'10+2 PCB · merit-based',fee:'≈ ₹85,000 / year (indicative)',band:'value',about:'A sample private nursing college entry showing how allied-health institutions will be listed with eligibility and indicative fee bands.',facilities:['Clinical Tie-ups','Skills Lab','Hostel for Students']},
- {id:'c4',name:'Sample Arts & Science College',district:'Thrissur',city:'Thrissur',type:'Government',admission:'Merit (CAP)',courses:['BA English','BA Psychology','B.Com','B.Sc Physics'],eligibility:'10+2 any stream · centralised allotment',fee:'≈ ₹8,000 / year (indicative)',band:'budget',about:'A sample government arts & science college entry — degree programmes with very accessible fees through the centralised admission process.',facilities:['Library','NCC & NSS','Sports Grounds']},
- {id:'c5',name:'Sample Business School',district:'Ernakulam',city:'Kochi',type:'Private',admission:'Institution / Merit',courses:['BBA','B.Com (Hons)','BBA + CA Coaching'],eligibility:'10+2 any stream · interview in some cases',fee:'≈ ₹1,10,000 / year (indicative)',band:'value',about:'A sample private business-school entry for management-focused students, listing typical UG offerings and fee band.',facilities:['Industry Sessions','Incubation Cell','Internship Support']},
- {id:'c6',name:'Sample Law College',district:'Kottayam',city:'Kottayam',type:'Government',admission:'CLAT / KEAM-Law',courses:['BA LLB (5-year)','B.Com LLB (5-year)','LLB (3-year)'],eligibility:'10+2 any stream · CLAT score',fee:'≈ ₹28,000 / year (indicative)',band:'mid',about:'A sample law institution entry. Five-year integrated law programmes admit through national and state-level entrance processes.',facilities:['Moot Court Hall','Legal Aid Clinic','Law Library']},
- {id:'c7',name:'Sample Design & Architecture Institute',district:'Kozhikode',city:'Kozhikode',type:'Private',admission:'NATA / Institution Test',courses:['B.Arch','B.Des — Visual Communication','B.Des — Product Design'],eligibility:'10+2 with Maths (B.Arch) · portfolio (B.Des)',fee:'≈ ₹2,40,000 / year (indicative)',band:'premium',about:'A sample design & architecture institute entry showing aptitude-test-based admission routes and studio-driven programmes.',facilities:['Design Studios','Workshops','Exhibition Gallery']},
- {id:'c8',name:'Sample Self-Financing Engineering College',district:'Ernakulam',city:'Kakkanad',type:'Private',admission:'KEAM',courses:['B.Tech — CSE','B.Tech — AI & Data Science','B.Tech — EEE'],eligibility:'10+2 PCM · KEAM rank',fee:'≈ ₹1,40,000 / year (indicative)',band:'value',about:'A sample self-financing engineering college entry — same KEAM process as government colleges, with different fee structures.',facilities:['Tech Park Proximity','Placement Cell','R&D Centres']}
-];
 
 const PATHS = [
  {title:'Technology',icon:'monitor',interest:'Logic, building things, solving problems with computers',courses:['B.Tech CSE','B.Sc Computer Science','BCA','B.Sc Data Science'],skills:['Programming & Logic','Data Structures','Systems Thinking','Continuous Learning'],careers:['Software Development','Data & AI','Cybersecurity','Cloud & DevOps']},
@@ -944,68 +933,7 @@ function collegeCard(c,i){
   </article>`;
 }
 
-/* ---------------- COLLEGE EXPLORER ---------------- */
-function explorerHTML(pre,note='',limit=0){
-  const modes=[...new Set(COLLEGES.map(c=>c.admission))];
-  const courseOpts=[...new Set(COLLEGES.flatMap(c=>c.courses))].sort();
-  return `<div class="fx">
-    <div class="search">${ic('search')}<input class="inp" id="${pre}-q" placeholder="Search colleges…" aria-label="Search colleges"></div>
-    <select class="inp sel" id="${pre}-d" aria-label="District"><option value="">All Districts</option>${DISTRICTS.map(d=>`<option>${d}</option>`).join('')}</select>
-    <select class="inp sel" id="${pre}-c" aria-label="Course"><option value="">All Courses</option>${courseOpts.map(x=>`<option>${esc(x)}</option>`).join('')}</select>
-    <select class="inp sel" id="${pre}-t" aria-label="College type"><option value="">All Types</option><option>Government</option><option>Private</option></select>
-    <select class="inp sel" id="${pre}-m" aria-label="Admission mode"><option value="">Any Admission Mode</option>${modes.map(m=>`<option>${esc(m)}</option>`).join('')}</select>
-    <select class="inp sel" id="${pre}-b" aria-label="Budget"><option value="">Any Budget</option><option value="budget">Under ₹25k / yr</option><option value="mid">₹25k – ₹1L / yr</option><option value="value">₹1L – ₹3L / yr</option><option value="premium">Above ₹3L / yr</option></select>
-  </div>
-  ${note?`<div class="fnote">${ic('eye')}<span>${note}</span></div>`:''}
-  <p class="fcount" id="${pre}-count"></p>
-  <div class="grid3" id="${pre}-res"></div>
-  ${limit?`<div class="center" style="margin-top:30px" data-reveal><a class="btn btn-ghost" href="#/colleges">View All Colleges ${ic('arrow')}</a></div>`:''}`;
-}
-function renderColleges(pre,state,limit=0){
-  const q=state.q.toLowerCase();
-  let list=COLLEGES.filter(c=>
-    (!state.d||c.district===state.d)&&(!state.t||c.type===state.t)&&(!state.m||c.admission===state.m)&&
-    (!state.b||c.band===state.b)&&(!state.c||c.courses.some(x=>x===state.c))&&
-    (!q||(c.name+c.city+c.district+c.courses.join(' ')).toLowerCase().includes(q)));
-  const box=document.getElementById(`${pre}-res`); if(!box)return;
-  document.getElementById(`${pre}-count`).textContent=list.length?`${list.length} institution${list.length>1?'s':''} found`:'';
-  if(limit)list=list.slice(0,limit);
-  box.innerHTML=list.length?list.map(collegeCard).join(''):
-    `<div class="empty" style="grid-column:1/-1">${ic('search')}<p>No sample entries match these filters.</p><p class="small-note">Try widening your filters — or ask a counsellor directly.</p></div>`;
-  initReveal(box);
-  $$('[data-col]',box).forEach(b=>b.addEventListener('click',()=>openCollege(b.dataset.col)));
-}
-function bindExplorer(pre,limit=0){
-  const state={q:'',d:'',c:'',t:'',m:'',b:''};
-  const rer=()=>renderColleges(pre,state,limit);
-  document.getElementById(`${pre}-q`).addEventListener('input',e=>{state.q=e.target.value;rer()});
-  ['d','c','t','m','b'].forEach(k=>document.getElementById(`${pre}-${k}`).addEventListener('change',e=>{state[k]=e.target.value;rer()}));
-  rer();
-}
 
-/* ---------------- SLIDE-OVER DETAILS ---------------- */
-function openSlide(html){$('#slide').innerHTML=html;$('#slide-ov').classList.add('open');$('#slide').classList.add('open');$('#slide').scrollTop=0;bindLeadTriggers($('#slide'))}
-function closeSlide(){$('#slide').classList.remove('open');$('#slide-ov').classList.remove('open')}
-function openCollege(id){
-  const c=COLLEGES.find(x=>x.id===id); if(!c)return;
-  openSlide(`
-    <div class="sl-top"><span class="badge b-out">Sample entry — replace with verified data</span>
-      <button class="xbtn" data-close-slide aria-label="Close details">${ic('close')}</button></div>
-    <div class="sl-badges"><span class="badge">${esc(c.type)}</span><span class="badge b-cyan">${ic('clip')} ${esc(c.admission)}</span></div>
-    <h2>${esc(c.name)}</h2>
-    <p class="cc-loc">${ic('pin')} ${esc(c.city)}, ${esc(c.district)} district, Kerala</p>
-    <div class="sl-sec"><h4>${ic('eye')} About</h4><p>${esc(c.about)}</p></div>
-    <div class="sl-sec"><h4>${ic('bookopen')} Courses Offered</h4><ul>${c.courses.map(x=>`<li class="tag">${esc(x)}</li>`).join('')}</ul></div>
-    <div class="sl-sec"><h4>${ic('check')} Eligibility</h4><p>${esc(c.eligibility)}</p></div>
-    <div class="sl-sec"><h4>${ic('clip')} Admission Information</h4><p>Admission mode: <b style="color:var(--ink)">${esc(c.admission)}</b>. Exact timelines and counselling rounds vary each year — a Vistora counsellor can guide you through the current process.</p></div>
-    <div class="sl-sec"><h4>${ic('building')} Facilities</h4><ul>${c.facilities.map(x=>`<li class="tag">${esc(x)}</li>`).join('')}</ul></div>
-    <div class="sl-sec"><h4>${ic('file')} Indicative Fee</h4><p class="fee" style="font-size:18px">${esc(c.fee)}</p></div>
-    <div class="sl-sec"><h4>${ic('phone')} Contact</h4><p>Contact details will appear here once verified institution information is added.</p></div>
-    <div class="sl-ctas">
-      <button class="btn btn-grad" data-open-lead data-need="Admission Assistance" data-close-slide>Enquire About This College ${ic('arrow')}</button>
-      <a class="btn btn-ghost" href="${waLink(`Hi Vistora Edu, I would like to know more about ${c.name} (${c.district}).`)}" target="_blank" rel="noopener">${ic('whatsapp')} Ask on WhatsApp</a>
-    </div>`);
-}
 function openCourse(id){
   const c=COURSES.find(x=>x.id===id); if(!c)return;
   openSlide(`
