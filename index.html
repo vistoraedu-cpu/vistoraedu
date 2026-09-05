@@ -1,0 +1,1646 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vistora Edu — Course, College & Career Guidance in Kerala | Your Future. Your Choice.</title>
+
+<!-- ============================================================
+  SEO FOUNDATION
+  Page title / description below target Kerala search intent
+  naturally (course selection after plus two, admission guidance,
+  career counselling Kerala) without keyword stuffing.
+
+  Suggested robots.txt:
+    User-agent: *
+    Allow: /
+
+  Sitemap URL list (host at /sitemap.xml in production):
+    /            /#courses        /#colleges      /#career
+    /#admissions /#about          /#contact
+
+  NOTE: This file ships as a single-page application. For full
+  crawlability in production, prerender each route to static HTML
+  (or move to SSR) and give every course/college detail page its
+  own canonical URL + unique <title>/<meta description>.
+============================================================= -->
+<meta name="description" content="Vistora Edu offers personalised course selection, college selection, career guidance and admission assistance for students across Kerala. After plus two, make your next step with confidence. Your Future. Your Choice.">
+<link rel="canonical" href="https://vistoraedu.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vistora Edu — Your Future. Your Choice.">
+<meta property="og:description" content="Personalised education and career guidance for students across Kerala. Find the right course. Choose the right college.">
+<meta property="og:url" content="https://vistoraedu.com/">
+<meta property="og:image" content="https://picsum.photos/seed/vistora-og/1200/630.jpg">
+<meta name="theme-color" content="#0D1B2A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23C19A3F' d='M12 1l2.8 8.2L23 12l-8.2 2.8L12 23l-2.8-8.2L1 12l8.2-2.8z'/%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"EducationalOrganization",
+  "name":"Vistora Edu",
+  "slogan":"Your Future. Your Choice.",
+  "description":"Personalised education and career guidance for students across Kerala — course selection, college selection, career planning and admission assistance.",
+  "url":"https://vistoraedu.com/",
+  "areaServed":{"@type":"State","name":"Kerala","country":"IN"},
+  "address":{"@type":"PostalAddress","addressRegion":"Kerala","addressCountry":"IN"}
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Manrope:wght@200..800&family=Noto+Sans+Malayalam:wght@400..700&display=swap" rel="stylesheet">
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --navy:#0D1B2A; --navy-2:#14283E; --navy-3:#0A141F;
+  --ink:#1C2733; --mut:#5C6875; --mut-l:#9AA6B1;
+  --paper:#FAF7F1; --paper-2:#F2EDE2; --white:#FFFFFF;
+  --gold:#C19A3F; --gold-2:#A5822F; --gold-soft:#F1E7CE; --gold-ink:#20180A;
+  --line:rgba(16,30,46,.14); --line-l:rgba(250,247,241,.16);
+  --f-d:"Fraunces",Georgia,serif;
+  --f-b:"Manrope","Noto Sans Malayalam",-apple-system,sans-serif;
+  --sec:clamp(72px,9vw,128px);
+  --sh:0 24px 60px rgba(13,27,42,.13);
+  --r:10px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font:400 16.5px/1.65 var(--f-b);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+::selection{background:var(--gold-soft);color:var(--gold-ink)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--navy);color:#fff;padding:10px 18px;border-radius:8px;z-index:200}
+.skip:focus{left:8px}
+body.has-mbar{padding-bottom:74px}
+
+/* ============ TYPO ============ */
+h1,h2,h3,.serif{font-family:var(--f-d);font-weight:560;line-height:1.08;letter-spacing:-.015em}
+.ml{font-family:var(--f-b)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:700 11.5px/1 var(--f-b);letter-spacing:.22em;text-transform:uppercase;color:var(--gold-2)}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--gold)}
+.h2{font-size:clamp(32px,4.4vw,52px);margin:16px 0 18px}
+.lead{font-size:clamp(16.5px,1.6vw,19px);color:var(--mut);max-width:620px}
+.on-dark{color:#fff}.on-dark .lead{color:var(--mut-l)}
+.gold{color:var(--gold)}
+em.acc{font-style:italic;color:var(--gold);font-weight:480}
+
+/* ============ LAYOUT ============ */
+.wrap{max-width:1220px;margin:0 auto;padding:0 clamp(20px,4vw,32px)}
+.section{padding:var(--sec) 0}
+.section-tight{padding:clamp(56px,7vw,88px) 0}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,72px);align-items:center}
+.split-l{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,6vw,88px);align-items:start}
+.navy{background:var(--navy);color:#fff}
+.paper-2{background:var(--paper-2)}
+.hairline-t{border-top:1px solid var(--line)}
+.small-note{font-size:13px;color:var(--mut)}
+.on-dark .small-note{color:var(--mut-l)}
+
+/* ============ BUTTONS ============ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 15px/1 var(--f-b);padding:17px 28px;border-radius:8px;border:1px solid transparent;transition:transform .22s,box-shadow .22s,background .22s,border-color .22s;text-decoration:none;white-space:nowrap}
+.btn svg{width:17px;height:17px;transition:transform .22s}
+.btn:hover svg{transform:translateX(3px)}
+.btn-navy{background:var(--navy);color:#fff}.btn-navy:hover{background:var(--navy-2);transform:translateY(-2px);box-shadow:0 14px 30px rgba(13,27,42,.22)}
+.btn-gold{background:var(--gold);color:var(--gold-ink)}.btn-gold:hover{background:#CFAB4F;transform:translateY(-2px);box-shadow:0 14px 30px rgba(193,154,63,.32)}
+.btn-line{border-color:var(--line);color:var(--ink)}.btn-line:hover{border-color:var(--navy);transform:translateY(-2px)}
+.btn-light{border-color:rgba(255,255,255,.35);color:#fff}.btn-light:hover{border-color:#fff;transform:translateY(-2px)}
+.btn-sm{padding:12px 18px;font-size:13.5px;border-radius:7px}
+.tlink{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;color:var(--gold-2);text-decoration:none;border-bottom:1px solid transparent;transition:.2s}
+.tlink:hover{border-color:var(--gold-2)}
+.tlink svg{width:16px;height:16px}
+
+/* ============ HEADER ============ */
+#site-head{position:sticky;top:0;z-index:60;background:var(--paper);transition:box-shadow .3s,border-color .3s;border-bottom:1px solid transparent}
+#site-head.scrolled{border-color:var(--line);box-shadow:0 10px 34px rgba(13,27,42,.07)}
+.head-in{display:flex;align-items:center;justify-content:space-between;height:82px;transition:height .3s}
+#site-head.scrolled .head-in{height:64px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+.brand svg{width:26px;height:26px;color:var(--gold);transition:transform .4s}
+.brand:hover svg{transform:rotate(90deg)}
+.brand b{font:600 21px var(--f-d);letter-spacing:.02em;color:var(--ink)}
+.brand small{font:800 10px var(--f-b);letter-spacing:.3em;color:var(--gold-2);display:block;margin-top:1px}
+.nav-links{display:flex;gap:6px;list-style:none}
+.nav-links a{display:block;padding:9px 13px;font:600 14.5px var(--f-b);color:var(--mut);text-decoration:none;border-radius:7px;transition:.2s}
+.nav-links a:hover{color:var(--ink);background:var(--paper-2)}
+.nav-links a.on{color:var(--ink);position:relative}
+.nav-links a.on::after{content:"";position:absolute;left:13px;right:13px;bottom:4px;height:2px;background:var(--gold);border-radius:2px}
+.head-cta{display:flex;gap:12px;align-items:center}
+.burger{display:none;padding:10px;border:1px solid var(--line);border-radius:8px}
+.burger svg{width:20px;height:20px;display:block}
+#m-menu{position:fixed;inset:0;background:var(--paper);z-index:100;padding:20px clamp(20px,5vw,32px);display:flex;flex-direction:column;transform:translateX(100%);transition:transform .35s cubic-bezier(.6,0,.2,1)}
+#m-menu.open{transform:none}
+.m-top{display:flex;justify-content:space-between;align-items:center;height:56px}
+#m-menu nav{margin-top:26px;display:flex;flex-direction:column}
+#m-menu nav a{font:560 clamp(26px,6vw,34px)/1.3 var(--f-d);text-decoration:none;padding:12px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+#m-menu nav a svg{width:20px;height:20px;color:var(--gold)}
+.m-foot{margin-top:auto;display:grid;gap:10px;padding-bottom:16px}
+
+/* ============ HERO ============ */
+.hero{position:relative;overflow:hidden;padding:clamp(44px,6vw,84px) 0 0}
+.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:clamp(36px,5vw,64px);align-items:center}
+.hero h1{font-size:clamp(50px,7.3vw,102px);line-height:.97;margin:20px 0 26px}
+.hero .desc{max-width:520px;color:var(--mut);font-size:18px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.trust-line{display:flex;align-items:center;flex-wrap:wrap;gap:14px 20px;margin-top:clamp(36px,5vw,58px);padding:22px 0 26px;border-top:1px solid var(--line);font:700 12px var(--f-b);letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.trust-line .starsep{width:9px;height:9px;color:var(--gold);flex:none}
+.hero-visual{position:relative}
+.arch{position:relative;border-radius:210px 210px 22px 22px;overflow:hidden;aspect-ratio:4/5;max-width:460px;margin-left:auto;background:var(--paper-2)}
+.arch::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(13,27,42,.42),transparent 42%)}
+.arch img{width:100%;height:100%;object-fit:cover}
+.arch-frame{position:absolute;inset:0;transform:translate(16px,16px);border:1px solid var(--gold);border-radius:210px 210px 22px 22px;pointer-events:none}
+.arch-cap{position:absolute;left:22px;bottom:20px;z-index:2;color:#fff;font:700 11px var(--f-b);letter-spacing:.2em;text-transform:uppercase;display:flex;gap:9px;align-items:center}
+.arch-cap svg{width:11px;height:11px;color:var(--gold)}
+.starchart{position:absolute;pointer-events:none;color:var(--navy)}
+.hero .starchart{right:-140px;top:-60px;width:620px;opacity:.9}
+.star-g{color:var(--gold)}
+.path-card{position:absolute;left:-58px;bottom:40px;width:300px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 22px 20px;box-shadow:var(--sh);animation:floaty 7s ease-in-out infinite;z-index:3}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+.path-card h3{font-size:19px;margin-bottom:8px;letter-spacing:0}
+.path-card p{font-size:13.5px;color:var(--mut);margin-bottom:14px}
+
+/* ============ CONFUSION CHIPS ============ */
+.chips{display:flex;flex-wrap:wrap;gap:14px 16px;max-width:860px}
+.chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:14px 24px;font:600 15.5px var(--f-b);transform:rotate(var(--r,0deg));transition:transform .35s,border-color .35s,box-shadow .35s;cursor:default}
+.chip:hover{transform:rotate(0) translateY(-3px);border-color:var(--gold);box-shadow:0 12px 26px rgba(13,27,42,.09)}
+.resolve{margin-top:clamp(44px,6vw,64px);padding-top:clamp(36px,5vw,52px);border-top:1px solid var(--line);max-width:760px}
+.resolve h3{font-size:clamp(26px,3.4vw,38px);margin-bottom:14px}
+
+/* ============ STEPS ============ */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);position:relative;margin-top:clamp(40px,5vw,64px)}
+.steps::before{content:"";position:absolute;top:31px;left:9%;right:9%;height:1px;background:var(--line);transform:scaleX(0);transform-origin:left;transition:transform 1.4s cubic-bezier(.6,0,.2,1) .2s}
+.steps.in::before{transform:scaleX(1)}
+.step{padding:0 clamp(10px,1.6vw,22px);position:relative}
+.step-num{font:600 15px var(--f-d);color:var(--gold-2);background:var(--paper);display:inline-flex;align-items:center;justify-content:center;width:62px;height:62px;border:1px solid var(--line);border-radius:50%;margin-bottom:20px;font-size:20px;font-style:italic;position:relative;z-index:1}
+.step h3{font-size:21px;letter-spacing:.04em;text-transform:uppercase;font-family:var(--f-b);font-weight:800;margin-bottom:10px}
+.step p{font-size:14.5px;color:var(--mut)}
+
+/* ============ COURSE INDEX ============ */
+.idx{border-top:1px solid var(--line)}
+.idx a{display:grid;grid-template-columns:58px 1fr 26px;gap:clamp(14px,2.4vw,30px);align-items:baseline;padding:clamp(18px,2.2vw,26px) 6px;border-bottom:1px solid var(--line);text-decoration:none;transition:background .25s,padding-left .25s}
+.idx a:hover{background:#fff;padding-left:16px}
+.idx .n{font:italic 500 15px var(--f-d);color:var(--gold-2)}
+.idx .t{font:560 clamp(21px,2.4vw,28px)/1.2 var(--f-d);color:var(--ink);transition:color .2s}
+.idx a:hover .t{color:var(--gold-2)}
+.idx .d{grid-column:2;font-size:14px;color:var(--mut);margin-top:4px;max-width:520px}
+.idx .arr{grid-row:1/span 2;align-self:center;color:var(--mut-l);transition:.25s}
+.idx a:hover .arr{color:var(--gold-2);transform:translateX(4px)}
+.idx .arr svg{width:20px;height:20px}
+
+/* ============ CARDS / PANELS ============ */
+.panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:clamp(22px,3vw,32px)}
+.badge{display:inline-flex;align-items:center;gap:6px;font:700 10.5px var(--f-b);letter-spacing:.12em;text-transform:uppercase;padding:5px 10px;border-radius:999px;background:var(--gold-soft);color:#6E5518}
+.badge.gray{background:#ECEFF2;color:#54636F}
+.badge.outline{background:transparent;border:1px dashed var(--line);color:var(--mut)}
+.ccard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;display:flex;flex-direction:column;gap:12px;transition:transform .25s,box-shadow .25s,border-color .25s;position:relative}
+.ccard:hover{transform:translateY(-4px);box-shadow:var(--sh);border-color:rgba(193,154,63,.5)}
+.ccard h3{font-size:21px}
+.cmeta{display:flex;flex-wrap:wrap;gap:7px}
+.tag{font:600 12px var(--f-b);padding:4px 11px;border-radius:999px;background:var(--paper-2);color:var(--mut)}
+.crow{display:flex;gap:9px;align-items:flex-start;font-size:14px;color:var(--mut)}
+.crow svg{width:15px;height:15px;flex:none;margin-top:4px;color:var(--gold-2)}
+.fee{font:700 16px var(--f-b);color:var(--ink)}
+.ccard .actions{margin-top:auto;display:flex;gap:8px;padding-top:8px}
+
+/* ============ CAREER CHAIN ============ */
+.chain{display:flex;flex-wrap:wrap;margin-top:clamp(36px,5vw,52px)}
+.chain-node{flex:1 1 150px;min-width:150px;background:#fff;border:1px solid var(--line);border-right:0;padding:22px 20px;cursor:pointer;transition:background .25s;position:relative;text-align:left}
+.chain-node:last-child{border-right:1px solid var(--line)}
+.chain-node span{font:800 12px var(--f-b);letter-spacing:.18em;color:var(--mut);display:block;margin-bottom:6px}
+.chain-node b{font:560 20px var(--f-d);color:var(--ink)}
+.chain-node svg{position:absolute;right:12px;top:50%;transform:translateY(-50%);width:15px;height:15px;color:var(--line);display:none}
+.chain-node.on{background:var(--navy)}
+.chain-node.on span{color:var(--gold)}.chain-node.on b{color:#fff}
+.chain-desc{margin-top:16px;font-size:15.5px;color:var(--mut);max-width:640px;min-height:52px}
+.eg-row{display:flex;align-items:center;flex-wrap:wrap;gap:10px 16px;padding:18px 4px;border-top:1px solid var(--line);font-size:15.5px}
+.eg-row b{font:560 18px var(--f-d)}
+.eg-row svg{width:16px;height:16px;color:var(--gold);flex:none}
+.eg-row .fin{font-weight:800;color:var(--gold-2)}
+
+/* ============ RULED GRID (personalisation / trust) ============ */
+.ruled{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:clamp(36px,5vw,56px)}
+.ruled>div{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:clamp(26px,3.4vw,44px)}
+.ruled .rn{font:italic 500 17px var(--f-d);color:var(--gold-2);display:block;margin-bottom:14px}
+.ruled h3{font-size:clamp(20px,2vw,25px);margin-bottom:10px;letter-spacing:.02em}
+.ruled p{font-size:15px;color:var(--mut)}
+.ruled .ric{width:30px;height:30px;color:var(--gold);margin-bottom:16px}
+@media(max-width:760px){.ruled{grid-template-columns:1fr}}
+
+/* ============ TIMELINE (admissions) ============ */
+.tl{position:relative;margin-top:clamp(36px,5vw,56px);padding-left:34px}
+.tl::before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:1px;background:var(--line)}
+.tl-item{position:relative;padding:0 0 34px 22px}
+.tl-item::before{content:"";position:absolute;left:-30px;top:7px;width:13px;height:13px;border-radius:50%;background:var(--paper);border:2px solid var(--gold)}
+.tl-item .tn{font:italic 500 15px var(--f-d);color:var(--gold-2)}
+.tl-item h3{font-size:20px;margin:4px 0 6px}
+.tl-item p{font-size:14.5px;color:var(--mut);max-width:560px}
+
+/* ============ FORMS ============ */
+.field{margin-bottom:16px}
+.field label{display:block;font:700 13px var(--f-b);margin-bottom:7px;letter-spacing:.02em}
+.field label span{color:var(--gold-2)}
+.input,.select,.textarea{width:100%;background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 16px;font:500 15px var(--f-b);color:var(--ink);transition:border-color .2s,box-shadow .2s;appearance:none}
+.textarea{min-height:110px;resize:vertical}
+.input:focus,.select:focus,.textarea:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px var(--gold-soft)}
+.select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%235C6875' stroke-width='2.4'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 15px center;padding-right:42px}
+.err{display:none;font:600 12.5px var(--f-b);color:#A33A2E;margin-top:6px}
+.field.bad .err{display:block}
+.field.bad .input,.field.bad .select{border-color:#C4655A}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+.opt-chips{display:flex;flex-wrap:wrap;gap:9px}
+.opt-chips input{position:absolute;opacity:0;pointer-events:none}
+.opt-chips label{display:inline-flex;padding:11px 17px;border:1px solid var(--line);border-radius:999px;font:600 13.5px var(--f-b);cursor:pointer;transition:.2s;margin:0;background:#fff}
+.opt-chips input:checked+label{background:var(--navy);color:#fff;border-color:var(--navy)}
+.opt-chips input:focus-visible+label{outline:2px solid var(--gold);outline-offset:2px}
+
+/* success state */
+.sent{text-align:center;padding:34px 10px}
+.sent .ok-ring{width:66px;height:66px;border-radius:50%;background:var(--gold-soft);display:inline-flex;align-items:center;justify-content:center;margin-bottom:20px}
+.sent .ok-ring svg{width:28px;height:28px;color:var(--gold-2)}
+.sent h3{font-size:26px;margin-bottom:10px}
+.sent p{color:var(--mut);max-width:400px;margin:0 auto 22px}
+.sent .stack{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* ============ MODALS ============ */
+.overlay{position:fixed;inset:0;background:rgba(10,20,31,.58);z-index:120;display:none;align-items:flex-start;justify-content:center;padding:5vh 16px;overflow-y:auto}
+.overlay.open{display:flex}
+.modal{background:#fff;border-radius:16px;width:100%;max-width:600px;padding:clamp(24px,4vw,38px);position:relative;animation:pop .3s cubic-bezier(.3,1.2,.4,1)}
+@keyframes pop{from{opacity:0;transform:translateY(16px) scale(.98)}}
+.modal-x{position:absolute;top:16px;right:16px;padding:9px;border:1px solid var(--line);border-radius:8px;line-height:0}
+.modal-x svg{width:16px;height:16px}
+.modal h3{font-size:clamp(24px,3vw,30px);margin-bottom:6px}
+.modal .msub{color:var(--mut);font-size:15px;margin-bottom:22px}
+.slide{position:fixed;top:0;right:0;bottom:0;width:min(520px,100%);background:#fff;z-index:130;transform:translateX(105%);transition:transform .4s cubic-bezier(.6,0,.2,1);overflow-y:auto;padding:clamp(24px,4vw,40px);border-left:1px solid var(--line)}
+.slide.open{transform:none}
+.slide h3{font-size:28px;margin:10px 0 4px}
+.slide .sec{margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+.slide .sec h4{font:800 12px var(--f-b);letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin-bottom:10px}
+.slide ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+
+/* ============ ACCORDION ============ */
+.acc{border-top:1px solid var(--line)}
+.acc-item{border-bottom:1px solid var(--line)}
+.acc-btn{width:100%;display:flex;justify-content:space-between;align-items:center;gap:18px;text-align:left;padding:20px 4px;font:560 18px var(--f-d)}
+.acc-btn svg{width:18px;height:18px;flex:none;color:var(--gold-2);transition:transform .3s}
+.acc-item.open .acc-btn svg{transform:rotate(45deg)}
+.acc-body{display:none;padding:0 4px 22px;color:var(--mut);font-size:15.5px;max-width:680px}
+.acc-item.open .acc-body{display:block}
+
+/* ============ TESTIMONIAL PLACEHOLDERS ============ */
+.t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:clamp(34px,4vw,52px)}
+.t-slot{border:1.5px dashed var(--line);border-radius:14px;padding:26px;background:rgba(255,255,255,.5)}
+.t-slot .ph-ava{width:52px;height:52px;border-radius:50%;background:var(--paper-2);display:flex;align-items:center;justify-content:center;margin-bottom:16px;color:var(--mut-l)}
+.t-slot .ph-ava svg{width:22px;height:22px}
+.t-slot .ph-quote{font:italic 480 17px/1.5 var(--f-d);color:var(--mut);margin-bottom:18px}
+.t-slot .ph-meta{font:600 12px var(--f-b);color:var(--mut-l);letter-spacing:.04em}
+.t-slot .ph-meta b{display:block;color:var(--mut);font-size:13.5px}
+@media(max-width:900px){.t-grid{grid-template-columns:1fr}}
+
+/* ============ FOOTER ============ */
+footer{background:var(--navy-3);color:var(--mut-l);padding:clamp(56px,7vw,84px) 0 0;margin-top:0}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:clamp(30px,4vw,56px)}
+.f-grid h4{font:800 12px var(--f-b);letter-spacing:.2em;text-transform:uppercase;color:#fff;margin-bottom:18px}
+.f-grid ul{list-style:none;display:grid;gap:10px}
+.f-grid a{color:var(--mut-l);text-decoration:none;font-size:14.5px;transition:color .2s}
+.f-grid a:hover{color:var(--gold)}
+.f-brand p{font-size:14.5px;margin:16px 0 20px;max-width:300px}
+.f-soc{display:flex;gap:10px}
+.f-soc a{width:40px;height:40px;border:1px solid var(--line-l);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:.2s}
+.f-soc a:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+.f-soc svg{width:16px;height:16px}
+.f-bottom{margin-top:clamp(40px,5vw,60px);border-top:1px solid var(--line-l);padding:22px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px}
+.f-bottom button{color:var(--mut-l);font-size:13px}
+.f-bottom button:hover{color:var(--gold)}
+
+/* ============ FLOATING UI ============ */
+#wa-float{position:fixed;right:20px;bottom:20px;z-index:90;width:56px;height:56px;border-radius:50%;background:#1FA855;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 34px rgba(31,168,85,.4);transition:transform .25s;text-decoration:none}
+#wa-float:hover{transform:scale(1.08)}
+#wa-float::before{content:"";position:absolute;inset:-6px;border-radius:50%;border:1px solid rgba(31,168,85,.5);animation:pulse 2.4s infinite}
+@keyframes pulse{0%{transform:scale(.85);opacity:1}100%{transform:scale(1.25);opacity:0}}
+#wa-float svg{width:26px;height:26px}
+.wa-tip{position:absolute;right:68px;top:50%;transform:translateY(-50%);background:var(--navy);color:#fff;font:600 13px var(--f-b);padding:10px 15px;border-radius:8px;white-space:nowrap;opacity:0;pointer-events:none;transition:.25s}
+#wa-float:hover .wa-tip{opacity:1}
+#m-bar{position:fixed;left:0;right:0;bottom:0;z-index:85;background:var(--paper);border-top:1px solid var(--line);display:none;gap:10px;padding:11px 14px;transform:translateY(110%);transition:transform .3s}
+#m-bar.show{transform:none}
+#m-bar .btn{flex:1;padding:14px}
+#m-bar .wa-sq{flex:0 0 50px;border:1px solid var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#1FA855}
+#m-bar .wa-sq svg{width:22px;height:22px}
+@media(max-width:860px){#m-bar{display:flex}#wa-float{bottom:88px}}
+
+/* ============ TOAST ============ */
+#toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,80px);background:var(--navy);color:#fff;padding:13px 22px;border-radius:10px;display:flex;gap:10px;align-items:center;font:600 14px var(--f-b);z-index:200;transition:transform .35s cubic-bezier(.3,1.2,.4,1);box-shadow:var(--sh)}
+#toast.show{transform:translate(-50%,0)}
+#toast svg{width:16px;height:16px;color:var(--gold)}
+
+/* ============ ADMIN ============ */
+.adm{display:grid;grid-template-columns:230px 1fr;min-height:100vh;background:var(--paper)}
+.adm-side{background:var(--navy);color:var(--mut-l);padding:26px 18px;display:flex;flex-direction:column;gap:4px;position:sticky;top:0;height:100vh}
+.adm-side .brand b{color:#fff}
+.adm-side nav{margin-top:30px;display:grid;gap:4px}
+.adm-side nav button{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:8px;font:600 14px var(--f-b);color:var(--mut-l);text-align:left;transition:.2s}
+.adm-side nav button svg{width:17px;height:17px}
+.adm-side nav button:hover{background:rgba(255,255,255,.06);color:#fff}
+.adm-side nav button.on{background:var(--gold);color:var(--gold-ink)}
+.adm-main{padding:clamp(22px,3.5vw,44px)}
+.adm-top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:30px}
+.adm-top h1{font-size:clamp(26px,3vw,34px)}
+.stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-bottom:30px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}
+.stat b{font:600 34px var(--f-d);display:block;color:var(--ink)}
+.stat span{font:700 11.5px var(--f-b);letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.tbl-wrap{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:auto}
+table{width:100%;border-collapse:collapse;min-width:900px}
+th{font:800 11px var(--f-b);letter-spacing:.14em;text-transform:uppercase;color:var(--mut);text-align:left;padding:14px 16px;border-bottom:1px solid var(--line);background:var(--paper-2);white-space:nowrap}
+td{padding:14px 16px;border-bottom:1px solid var(--line);font-size:14px;vertical-align:middle}
+tr:last-child td{border-bottom:0}
+.status-sel{padding:7px 30px 7px 12px;border-radius:7px;border:1px solid var(--line);font:600 12.5px var(--f-b);appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%235C6875' stroke-width='2.4'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;cursor:pointer}
+.st-New{background:var(--gold-soft);color:#6E5518}.st-Contacted{background:#E3E9F0;color:#33506B}.st-CounsellingScheduled{background:#E4E1F2;color:#4A4380}.st-Follow-up{background:#F0E4D7;color:#85552A}.st-Converted{background:#DFEDE0;color:#2F6B36}.st-Closed{background:#ECECEC;color:#666}
+.row-act{display:flex;gap:8px}
+.icon-btn{width:34px;height:34px;border:1px solid var(--line);border-radius:8px;display:inline-flex;align-items:center;justify-content:center;transition:.2s;color:var(--mut)}
+.icon-btn:hover{border-color:var(--navy);color:var(--navy)}
+.icon-btn svg{width:15px;height:15px}
+.icon-btn.danger:hover{border-color:#A33A2E;color:#A33A2E}
+.adm-filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.adm-filters .input,.adm-filters .select{width:auto;min-width:160px;padding:11px 14px;font-size:14px}
+.adm-filters .input.grow{flex:1;min-width:200px}
+.empty{padding:60px 20px;text-align:center;color:var(--mut)}
+.empty svg{width:34px;height:34px;color:var(--mut-l);margin-bottom:12px}
+
+/* ============ REVEAL ============ */
+[data-reveal]{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.3,.8,.3,1);transition-delay:var(--d,0s)}
+[data-reveal].in{opacity:1;transform:none}
+.page-in{animation:pagein .45s ease}
+@keyframes pagein{from{opacity:0;transform:translateY(10px)}}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  [data-reveal]{opacity:1;transform:none}
+}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:1020px){
+  .hero-grid{grid-template-columns:1fr}
+  .arch{margin:0 auto;max-width:420px}
+  .path-card{position:static;width:min(360px,100%);margin:-52px auto 0;animation:none}
+  .hero .starchart{right:-220px}
+  .split-l{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;gap:0}
+  .steps::before{top:8px;bottom:8px;left:30px;right:auto;width:1px;height:auto;transform:scaleY(0);transform-origin:top}
+  .steps.in::before{transform:scaleY(1)}
+  .step{display:grid;grid-template-columns:62px 1fr;gap:0 20px;padding:20px 0;align-items:start}
+  .step-num{margin:0;grid-row:1/span 2}
+  .adm{grid-template-columns:1fr}
+  .adm-side{position:static;height:auto;flex-direction:row;align-items:center;flex-wrap:wrap;gap:10px}
+  .adm-side nav{margin:0;display:flex;flex-wrap:wrap}
+}
+@media(max-width:900px){
+  .nav-links,.head-cta .btn{display:none}
+  .burger{display:block}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .grid-2{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  body{font-size:15.5px}
+  .f-grid{grid-template-columns:1fr}
+  .f-row{grid-template-columns:1fr}
+  .idx a{grid-template-columns:34px 1fr 22px}
+  .chain-node{min-width:46%}
+  .hero-ctas .btn{width:100%}
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#app">Skip to content</a>
+
+<!-- ================= HEADER ================= -->
+<header id="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="#/" aria-label="Vistora Edu — Home">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1l2.8 8.2L23 12l-8.2 2.8L12 23l-2.8-8.2L1 12l8.2-2.8z"/></svg>
+      <span><b>VISTORA</b><small>EDU</small></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="nav-links"></ul>
+    </nav>
+    <div class="head-cta">
+      <button class="btn btn-gold btn-sm" data-open-lead>Get Free Counselling</button>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div id="m-menu" aria-hidden="true">
+  <div class="m-top">
+    <a class="brand" href="#/"><svg viewBox="0 0 24 24" style="width:24px;height:24px;color:var(--gold)"><path fill="currentColor" d="M12 1l2.8 8.2L23 12l-8.2 2.8L12 23l-2.8-8.2L1 12l8.2-2.8z"/></svg><span><b>VISTORA</b><small>EDU</small></span></a>
+    <button class="burger" id="m-close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <nav id="m-nav" aria-label="Mobile"></nav>
+  <div class="m-foot">
+    <button class="btn btn-gold" data-open-lead>Get Free Counselling</button>
+    <a class="btn btn-light" style="border-color:var(--line);color:var(--ink)" id="m-wa" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </div>
+</div>
+
+<main id="app" tabindex="-1"></main>
+
+<!-- ================= FOOTER ================= -->
+<footer id="site-foot"></footer>
+
+<!-- Floating WhatsApp -->
+<a id="wa-float" href="#" target="_blank" rel="noopener" aria-label="Chat with Vistora Edu on WhatsApp">
+  <span class="wa-tip">Need help choosing a course?</span>
+</a>
+
+<!-- Mobile sticky CTA bar -->
+<div id="m-bar">
+  <a class="wa-sq" id="bar-wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"></a>
+  <button class="btn btn-gold" data-open-lead>Get Free Counselling</button>
+</div>
+
+<!-- Lead modal -->
+<div class="overlay" id="lead-ov" role="dialog" aria-modal="true" aria-labelledby="lead-t">
+  <div class="modal">
+    <button class="modal-x" data-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div id="lead-body"></div>
+  </div>
+</div>
+
+<!-- College detail slide-over -->
+<div class="slide" id="col-slide" role="dialog" aria-modal="true" aria-label="College details"></div>
+<div class="overlay" id="slide-ov" data-close-slide></div>
+
+<!-- Legal modal -->
+<div class="overlay" id="legal-ov" role="dialog" aria-modal="true">
+  <div class="modal" style="max-width:640px">
+    <button class="modal-x" data-close-legal aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div id="legal-body"></div>
+  </div>
+</div>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<noscript><div style="padding:60px 24px;text-align:center;font-family:sans-serif"><h1 style="font-size:34px;margin-bottom:14px">VISTORA EDU — Your Future. Your Choice.</h1><p>Personalised education and career guidance for students across Kerala. Please enable JavaScript, or reach us on WhatsApp.</p></div></noscript>
+
+<script>
+'use strict';
+/* =====================================================================
+  VISTORA EDU — single-file application
+  ---------------------------------------------------------------------
+  CONFIGURATION — replace these values before going live:
+    · CONFIG.whatsapp  → real WhatsApp business number (country code, no +)
+    · CONFIG.phone / email / social links
+    · All <img> sources (currently picsum placeholders)
+    · DATA.colleges    → replace sample entries with verified data
+    · Admin demo passcode (below) → real auth (see Supabase notes)
+  ---------------------------------------------------------------------
+  SUPABASE MIGRATION PATH
+  Replace the localStorage `Store` with Supabase calls. Suggested schema:
+
+    create table leads (
+      id uuid primary key default gen_random_uuid(),
+      created_at timestamptz default now(),
+      name text not null,
+      phone text not null,
+      qualification text, stream text, marks text,
+      course text, location text, need text, message text,
+      source text, status text default 'New' check (status in
+        ('New','Contacted','Counselling Scheduled','Follow-up','Converted','Closed'))
+    );
+    create table courses (id uuid primary key default gen_random_uuid(), name text,
+      stream text, level text, duration text, eligibility text, overview text,
+      careers text[], interest text[]);
+    create table colleges (id uuid primary key default gen_random_uuid(), name text,
+      district text, city text, type text, admission text, courses text[],
+      eligibility text, fee text, fee_band text, about text, facilities text[]);
+    create table career_paths (id uuid primary key default gen_random_uuid(),
+      title text, interest text, courses text[], skills text[], careers text[]);
+    create table testimonials (id uuid primary key default gen_random_uuid(),
+      student text, course text, college text, review text, photo_url text);
+    create table faqs (id uuid primary key default gen_random_uuid(), q text, a text, sort int);
+    create table profiles (id uuid primary key references auth.users,
+      role text default 'staff');  -- admin gate: policies check role='admin'
+
+  Row Level Security: enable on all tables. Public gets INSERT-only on
+  leads/counselling_requests/admission_enquiries (or a unified `leads`);
+  SELECT/UPDATE/DELETE restricted to authenticated admin users via a
+  `profiles.role = 'admin'` policy. Never expose student PII publicly.
+===================================================================== */
+
+const CONFIG = {
+  whatsapp : '919847000000',            // ← REPLACE with the real WhatsApp number
+  phone    : '+91 98470 00000',         // ← REPLACE
+  email    : 'hello@vistoraedu.com',    // ← REPLACE
+  instagram: 'https://instagram.com/vistoraedu', // ← REPLACE
+  facebook : 'https://facebook.com/vistoraedu',  // ← REPLACE
+  site     : 'https://vistoraedu.com/'
+};
+const WA_MSG = 'Hi Vistora Edu, I would like personalised guidance about choosing a course/college.';
+const ADMIN_CODE = 'vistora2025'; // demo only — replace with real auth in production
+
+/* ---------------- ICONS (inline, stroke-consistent) ---------------- */
+const P = {
+  compass:'<circle cx="12" cy="12" r="10"/><polygon points="16.2 7.8 14.1 14.1 7.8 16.2 9.9 9.9" fill="currentColor" stroke="none"/>',
+  arrow:'<path d="M4 12h15M13 6l6 6-6 6"/>',
+  upright:'<path d="M7 17L17 7M8 7h9v9"/>',
+  check:'<path d="M4 12.5l5 5L20 6.5"/>',
+  search:'<circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/>',
+  phone:'<path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>',
+  mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>',
+  pin:'<path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>',
+  close:'<path d="M6 6l12 12M18 6L6 18"/>',
+  chev:'<path d="M6 9l6 6 6-6"/>',
+  plus:'<path d="M12 5v14M5 12h14"/>',
+  book:'<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>',
+  bookopen:'<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>',
+  briefcase:'<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>',
+  activity:'<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>',
+  heart:'<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/>',
+  monitor:'<rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>',
+  trend:'<path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/>',
+  pentool:'<path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.6 7.6"/><circle cx="11" cy="11" r="2"/>',
+  scale:'<path d="M12 3v16M9 21h6M12 5L4 8M12 5l8 3M4 8l-2.6 5.6a2.9 2.9 0 0 0 5.2 0zM20 8l-2.6 5.6a2.9 2.9 0 0 0 5.2 0z"/>',
+  feather:'<path d="M20.2 3.8a5.5 5.5 0 0 0-7.8 0L4 12.2V20h7.8l8.4-8.4a5.5 5.5 0 0 0 0-7.8z"/><path d="M16 8L2 22"/><path d="M17.5 12H9"/>',
+  mic:'<path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/>',
+  award:'<circle cx="12" cy="8" r="6"/><path d="M8.2 13.9L7 22l5-3 5 3-1.2-8.1"/>',
+  target:'<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>',
+  layers:'<path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>',
+  clock:'<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>',
+  user:'<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',
+  users:'<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/>',
+  tool:'<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-8 8l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 8-8z"/>',
+  shield:'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
+  eye:'<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>',
+  chat:'<path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5c-1.6 0-3.1-.4-4.4-1.2L3 20l1.2-5.1A8.5 8.5 0 1 1 21 11.5z"/>',
+  file:'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/>',
+  send:'<path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/>',
+  building:'<rect x="4" y="3" width="16" height="18"/><path d="M4 21h16M9 21v-4h6v4M8 7h.01M12 7h.01M16 7h.01M8 11h.01M12 11h.01M16 11h.01M8 15h.01M16 15h.01"/>',
+  filter:'<path d="M22 3H2l8 9.5V19l4 2v-8.5z"/>',
+  trash:'<path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/>',
+  download:'<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>',
+  grid:'<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>',
+  back:'<path d="M19 12H5M12 19l-7-7 7-7"/>',
+  whatsapp:'<path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2z"/><path d="M8.6 7.7c-.3 0-.7.1-.9.4-.3.3-.9 1-.9 2.2 0 1.3.9 2.6 1.1 2.8.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.2.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3l-1.9-.9c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a8 8 0 0 1-2.3-1.5 8.8 8.8 0 0 1-1.5-1.9c-.1-.2 0-.4.1-.5l.6-.7c.1-.2.2-.3.1-.5L9.4 8.2c-.1-.3-.4-.5-.8-.5z" fill="currentColor" stroke="none"/>',
+  instagram:'<rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/>',
+  facebook:'<path d="M14 8.5h2.5V5.5H14a3.5 3.5 0 0 0-3.5 3.5v2H8.5v3h2V21h3v-7h2.3l.4-3H13.5V9a.5.5 0 0 1 .5-.5z"/>'
+};
+const ic = (n,c='')=>`<svg class="${c}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${P[n]||''}</svg>`;
+const star = (c='')=>`<svg class="${c}" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1l2.8 8.2L23 12l-8.2 2.8L12 23l-2.8-8.2L1 12l8.2-2.8z"/></svg>`;
+const starchart = (cls,extra='')=>`<svg class="starchart ${cls}" viewBox="0 0 640 640" aria-hidden="true" ${extra}>
+  <g fill="none" stroke="currentColor" stroke-width="1">
+    <circle cx="320" cy="320" r="110" stroke-dasharray="2 7"/>
+    <circle cx="320" cy="320" r="180" stroke-dasharray="2 9"/>
+    <circle cx="320" cy="320" r="250" stroke-dasharray="2 11"/>
+    <circle cx="320" cy="320" r="315" stroke-dasharray="2 13"/>
+  </g>
+  <g stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+    <path d="M320 96v14M313 103h14"/><path d="M540 330v12M534 336h12"/>
+    <path d="M120 250v12M114 256h12"/><path d="M230 540v12M224 546h12"/>
+  </g>
+  <g class="star-g"><path fill="currentColor" d="M447 128l4.5 12.5L464 145l-12.5 4.5L447 162l-4.5-12.5L430 145l12.5-4.5z"/>
+  <path fill="currentColor" d="M185 420l3 8.5 8.5 3-8.5 3-3 8.5-3-8.5-8.5-3 8.5-3z"/></g>
+  <g fill="currentColor"><circle cx="320" cy="210" r="2.4"/><circle cx="430" cy="320" r="2.4"/><circle cx="320" cy="440" r="2.4"/><circle cx="205" cy="330" r="2.4"/><circle cx="398" cy="215" r="1.8"/><circle cx="240" cy="415" r="1.8"/></g>
+</svg>`;
+
+/* ---------------- DATA ---------------- */
+const DISTRICTS = ['Thiruvananthapuram','Kollam','Pathanamthitta','Alappuzha','Kottayam','Idukki','Ernakulam','Thrissur','Palakkad','Malappuram','Kozhikode','Wayanad','Kannur','Kasaragod'];
+
+/* Course categories shown on the home-page index */
+const COURSE_CATS = [
+  ['Engineering','B.Tech and specialised engineering programmes across major branches — from Computer Science to Civil and Mechanical.'],
+  ['Medicine','MBBS, BDS and Ayush pathways for students qualifying through NEET, with a clear view of every eligible route.'],
+  ['Nursing & Allied Health','B.Sc Nursing and allied health sciences such as MLT, radiology and physiotherapy — high-demand healthcare careers.'],
+  ['Computer Science & IT','B.Tech CSE, B.Sc CS, BCA and data-focused degrees for students drawn to technology and problem solving.'],
+  ['Commerce & Finance','B.Com, professional accounting and finance pathways that open careers in business, banking and audit.'],
+  ['Management','BBA and management studies for students who want to understand how organisations work and grow.'],
+  ['Design & Architecture','B.Des, B.Arch and visual design programmes for creatively driven, visually minded students.'],
+  ['Law','5-year integrated BA LLB and 3-year LLB routes for students interested in justice, argument and governance.'],
+  ['Arts & Humanities','BA programmes in psychology, English, economics, history and more — foundations for many strong careers.'],
+  ['Media & Communication','Journalism, mass communication and digital media degrees for storytellers and communicators.'],
+  ['Professional Courses','CA, CS, ACCA and other professional qualifications that can be pursued alongside or after a degree.']
+];
+
+/* Searchable course data (Courses page) — generic, factual entry requirements */
+const COURSES = [
+ {id:'btech',name:'B.Tech — Bachelor of Technology',stream:'Science',level:'Undergraduate',duration:'4 Years',eligibility:'10+2 with Physics, Chemistry & Mathematics. Kerala Engineering Admission usually through KEAM; some institutions accept JEE Main.',interest:['Technology','Design'],overview:'The standard engineering degree with branches ranging from Computer Science and Electronics to Civil, Mechanical and emerging fields like AI & Data Science. Branch choice matters more than the degree label — align it with how you like to solve problems.',careers:['Core Engineering','Software & IT','Energy & Infrastructure','Higher Studies / GATE']},
+ {id:'mbbs',name:'MBBS',stream:'Science',level:'Undergraduate',duration:'5.5 Years (incl. internship)',eligibility:'10+2 with Physics, Chemistry, Biology. Qualification through NEET-UG is mandatory for all medical admissions in India.',interest:['Healthcare'],overview:'The primary route to becoming a medical doctor. It is a long, demanding commitment — students should enter it out of genuine interest in medicine and patient care, not pressure or prestige alone.',careers:['Medical Practice','Surgery (after PG)','Public Health','Medical Research']},
+ {id:'nursing',name:'B.Sc Nursing',stream:'Science',level:'Undergraduate',duration:'4 Years',eligibility:'10+2 with Physics, Chemistry & Biology. Many institutions conduct their own entrance or consider plus-two marks.',interest:['Healthcare','People & Society'],overview:'A professional nursing degree combining clinical training with strong job demand in India and abroad. One of the most dependable healthcare pathways for science students.',careers:['Hospital Nursing','Community Health','Nursing Education','Opportunities Abroad (after licensing)']},
+ {id:'allied',name:'B.Sc Allied Health (MLT / Radiology / Physiotherapy)',stream:'Science',level:'Undergraduate',duration:'3–4.5 Years',eligibility:'10+2 with Physics, Chemistry & Biology (specific subject requirements vary by specialisation and institution).',interest:['Healthcare'],overview:'Allied health degrees train the diagnostic and therapeutic professionals behind modern healthcare — lab technology, imaging, physiotherapy and more. A strong option for students who want healthcare careers outside MBBS.',careers:['Diagnostics & Labs','Imaging Technology','Physiotherapy','Hospital Operations']},
+ {id:'cse',name:'B.Tech / B.Sc Computer Science',stream:'Science',level:'Undergraduate',duration:'3–4 Years',eligibility:'10+2 with Mathematics (B.Sc CS); PCM for B.Tech. Admission via KEAM, institution processes or merit.',interest:['Technology'],overview:'Focused computing degrees covering programming, data structures, systems and software development. Suitable for students who genuinely enjoy logical thinking and building things — the degree matters less than the skills you build alongside it.',careers:['Software Development','Data & AI','Cybersecurity','Product & Startups']},
+ {id:'bca',name:'BCA — Bachelor of Computer Applications',stream:'Any stream',level:'Undergraduate',duration:'3 Years',eligibility:'10+2 in any stream from a recognised board (some institutions prefer Mathematics or Computer Applications at plus-two).',interest:['Technology'],overview:'An applications-focused IT degree that is open to students from any plus-two stream. A practical route into the software industry, especially when paired with self-built projects and internships.',careers:['Software Development','Web & App Development','IT Support & Cloud','MCA / Higher Studies']},
+ {id:'ds',name:'B.Sc Data Science',stream:'Science',level:'Undergraduate',duration:'3–4 Years',eligibility:'10+2 with Mathematics, typically with admission based on merit or institution-level selection.',interest:['Technology','Business'],overview:'A modern degree built around statistics, programming and data analysis — sitting at the meeting point of technology and business decision-making.',careers:['Data Analytics','Business Intelligence','Machine Learning (after PG)','Research']},
+ {id:'bcom',name:'B.Com — Bachelor of Commerce',stream:'Commerce',level:'Undergraduate',duration:'3 Years',eligibility:'10+2 in Commerce or any stream (most institutions prefer a Commerce background).',interest:['Business'],overview:'The core commerce degree covering accounting, finance, taxation and business law. Highly flexible — it pairs well with CA, ACCA, M.Com or an MBA later.',careers:['Accounting & Audit','Banking & Finance','Taxation','Company Secretary / CA pathway']},
+ {id:'ca',name:'Chartered Accountancy (CA)',stream:'Commerce',level:'Professional',duration:'4–5 Years (alongside/after degree)',eligibility:'Register through the ICAI Foundation route after 10+2 (Commerce with Mathematics/Accountancy recommended). Clearing Foundation, Intermediate and Final levels is required.',interest:['Business'],overview:'India\u2019s premier professional accounting qualification. Demanding, exam-based and layered — best attempted by students genuinely comfortable with numbers and disciplined self-study.',careers:['Chartered Accountant Practice','Corporate Finance','Audit & Assurance','CFO Track']},
+ {id:'bba',name:'BBA — Bachelor of Business Administration',stream:'Any stream',level:'Undergraduate',duration:'3 Years',eligibility:'10+2 in any stream from a recognised board; selection is typically merit- or entrance-based.',interest:['Business','People & Society'],overview:'A broad introduction to management, marketing, finance and operations. Most valuable when combined with internships and a clear post-degree plan such as an MBA or a family-business role.',careers:['Management Roles','Marketing & Sales','HR','MBA / Higher Studies']},
+ {id:'barch',name:'B.Arch — Bachelor of Architecture',stream:'Science',level:'Undergraduate',duration:'5 Years',eligibility:'10+2 with Mathematics. A valid NATA score (or JEE Main Paper 2) is required for admission.',interest:['Design','Technology'],overview:'The professional degree required to practise as an architect — blending design thinking, physics, and studio-based learning over five years.',careers:['Architecture Practice','Urban Design','Interior & Spatial Design','Project Management']},
+ {id:'bdes',name:'B.Des — Bachelor of Design',stream:'Any stream',level:'Undergraduate',duration:'4 Years',eligibility:'10+2 in any stream. Most design institutions require an aptitude test and portfolio or studio test (e.g., UCEED, NID DAT, institution tests).',interest:['Design','Media'],overview:'A studio-intensive degree in visual communication, product, fashion, UX or spatial design. Right for students who think visually and enjoy making things — the portfolio you build matters as much as the degree.',careers:['UX / Product Design','Graphic & Brand Design','Design Studios','Freelance & Creative Direction']},
+ {id:'ballb',name:'BA LLB — Integrated Law',stream:'Any stream',level:'Undergraduate',duration:'5 Years',eligibility:'10+2 in any stream. Admission to National Law Universities is through CLAT; other institutions have their own processes.',interest:['Law','People & Society'],overview:'The five-year integrated law degree combining arts subjects with legal education. Opens doors to litigation, corporate law, judiciary exams and civil services.',careers:['Advocacy & Litigation','Corporate Law','Judiciary & Civil Services','Legal Advisory']},
+ {id:'ba',name:'BA — Psychology / English / Economics & more',stream:'Arts & Humanities',level:'Undergraduate',duration:'3 Years',eligibility:'10+2 in any stream from a recognised board (specific subject requirements vary by college).',interest:['People & Society','Media','Business'],overview:'BA programmes build deep understanding in a chosen subject along with writing, analysis and communication skills — a strong foundation for civil services, teaching, psychology, content and research careers.',careers:['Civil Services','Psychology & Counselling (after PG)','Teaching & Research','Content & Communication']},
+ {id:'media',name:'BA / BJMC — Mass Communication & Journalism',stream:'Any stream',level:'Undergraduate',duration:'3 Years',eligibility:'10+2 in any stream; some institutions conduct interviews or aptitude rounds.',interest:['Media','Design'],overview:'A hands-on degree in journalism, film, digital media and communication — best suited to curious students who follow news, culture and storytelling closely.',careers:['Journalism','Digital Media & Content','Public Relations','Film & Production']}
+];
+
+/* College sample entries — CLEARLY MARKED PLACEHOLDERS.
+   Replace with verified institutional data before launch. */
+const COLLEGES = [
+ {id:'c1',name:'Sample College of Engineering',district:'Thiruvananthapuram',city:'Thiruvananthapuram',type:'Government',admission:'KEAM',courses:['B.Tech — CSE','B.Tech — ECE','B.Tech — Mechanical','B.Tech — Civil'],eligibility:'10+2 PCM · KEAM rank',fee:'≈ ₹35,000 / year (indicative)',band:'mid',about:'A sample engineering institution entry demonstrating how verified college information will appear — location, courses, eligibility and indicative fees.',facilities:['Central Library','Hostels','Labs & Workshops','Placement Cell']},
+ {id:'c2',name:'Sample Medical College',district:'Kozhikode',city:'Kozhikode',type:'Government',admission:'NEET-UG',courses:['MBBS','B.Sc Nursing','B.Sc MLT'],eligibility:'10+2 PCB · NEET qualification',fee:'≈ ₹25,000 / year (indicative)',band:'mid',about:'A sample medical institution entry. Medical admissions in Kerala run through NEET counselling — your counsellor will walk you through the exact process for the current year.',facilities:['Teaching Hospital','Hostels','Research Wings']},
+ {id:'c3',name:'Sample Nursing College',district:'Ernakulam',city:'Kochi',type:'Private',admission:'Institution / Merit',courses:['B.Sc Nursing','B.Sc MLT','B.Pharm'],eligibility:'10+2 PCB · merit-based',fee:'≈ ₹85,000 / year (indicative)',band:'value',about:'A sample private nursing college entry showing how allied-health institutions will be listed with eligibility and indicative fee bands.',facilities:['Clinical Tie-ups','Skills Lab','Hostel for Students']},
+ {id:'c4',name:'Sample Arts & Science College',district:'Thrissur',city:'Thrissur',type:'Government',admission:'Merit (CAP)',courses:['BA English','BA Psychology','B.Com','B.Sc Physics'],eligibility:'10+2 any stream · centralised allotment',fee:'≈ ₹8,000 / year (indicative)',band:'budget',about:'A sample government arts & science college entry — degree programmes with very accessible fees through the centralised admission process.',facilities:['Library','NCC & NSS','Sports Grounds']},
+ {id:'c5',name:'Sample Business School',district:'Ernakulam',city:'Kochi',type:'Private',admission:'Institution / Merit',courses:['BBA','B.Com (Hons)','BBA + CA Coaching'],eligibility:'10+2 any stream · interview in some cases',fee:'≈ ₹1,10,000 / year (indicative)',band:'value',about:'A sample private business-school entry for management-focused students, listing typical UG offerings and fee band.',facilities:['Industry Sessions','Incubation Cell','Internship Support']},
+ {id:'c6',name:'Sample Law College',district:'Kottayam',city:'Kottayam',type:'Government',admission:'CLAT / KEAM-Law',courses:['BA LLB (5-year)','B.Com LLB (5-year)','LLB (3-year)'],eligibility:'10+2 any stream · CLAT score',fee:'≈ ₹28,000 / year (indicative)',band:'mid',about:'A sample law institution entry. Five-year integrated law programmes admit through national and state-level entrance processes.',facilities:['Moot Court Hall','Legal Aid Clinic','Law Library']},
+ {id:'c7',name:'Sample Design & Architecture Institute',district:'Kozhikode',city:'Kozhikode',type:'Private',admission:'NATA / Institution Test',courses:['B.Arch','B.Des — Visual Communication','B.Des — Product Design'],eligibility:'10+2 with Maths (B.Arch) · portfolio (B.Des)',fee:'≈ ₹2,40,000 / year (indicative)',band:'premium',about:'A sample design & architecture institute entry showing aptitude-test-based admission routes and studio-driven programmes.',facilities:['Design Studios','Workshops','Exhibition Gallery']},
+ {id:'c8',name:'Sample Self-Financing Engineering College',district:'Ernakulam',city:'Kakkanad',type:'Private',admission:'KEAM',courses:['B.Tech — CSE','B.Tech — AI & Data Science','B.Tech — EEE'],eligibility:'10+2 PCM · KEAM rank',fee:'≈ ₹1,40,000 / year (indicative)',band:'value',about:'A sample self-financing engineering college entry — same KEAM process as government colleges, with different fee structures.',facilities:['Tech Park Proximity','Placement Cell','R&D Centres']}
+];
+
+const PATHS = [
+ {title:'Technology',icon:'monitor',interest:'Logic, building things, solving puzzles with computers',courses:['B.Tech CSE','B.Sc Computer Science','BCA','B.Sc Data Science'],skills:['Programming','Data Structures','Systems Thinking','Continuous Learning'],careers:['Software Development','Data & AI','Cybersecurity','Product Engineering']},
+ {title:'Healthcare',icon:'heart',interest:'Biology, caring for people, calm under pressure',courses:['MBBS','B.Sc Nursing','Allied Health Sciences','B.Pharm'],skills:['Clinical Knowledge','Patient Care','Precision','Emotional Resilience'],careers:['Medical Practice','Nursing','Diagnostics & Therapy','Public Health']},
+ {title:'Business & Finance',icon:'trend',interest:'Numbers, markets, organising and growing things',courses:['B.Com','BBA','Chartered Accountancy','B.Sc Economics'],skills:['Accounting','Analysis','Communication','Commercial Awareness'],careers:['Accounting & Audit','Banking & Finance','Entrepreneurship','Management']},
+ {title:'Design & Creative',icon:'pentool',interest:'Visual thinking, making things, aesthetics with purpose',courses:['B.Des','B.Arch','BFA','Diploma in Design'],skills:['Design Thinking','Visual Tools','Portfolio Building','Client Communication'],careers:['UX / Product Design','Architecture','Brand & Graphic Design','Creative Studios']},
+ {title:'Law & Governance',icon:'scale',interest:'Argument, justice, how systems and rules work',courses:['BA LLB','B.Com LLB','LLB','Political Science (BA)'],skills:['Legal Reasoning','Research','Writing','Public Speaking'],careers:['Advocacy','Corporate Law','Judiciary & Civil Services','Policy']},
+ {title:'Media & Communication',icon:'mic',interest:'Stories, current affairs, expressing ideas clearly',courses:['BJMC / Mass Communication','BA English','BA Multimedia'],skills:['Writing & Editing','Production Tools','Interviewing','Digital Literacy'],careers:['Journalism','Digital Media','Public Relations','Film & Content']}
+];
+
+const DEFAULT_FAQS = [
+ {q:'Is the counselling session really free?',a:'Yes. Your first counselling session with Vistora is completely free, with no obligation to proceed anywhere.'},
+ {q:'Do you choose the course for me?',a:'No — and that is the point. We explain your options clearly, honestly and in context. The final decision is always yours, made with confidence instead of confusion.'},
+ {q:'Can parents join the counselling session?',a:'Absolutely, and we encourage it. Choosing higher education is a family decision, and we make sure parents get clear, complete information too.'},
+ {q:'Do you guarantee admission?',a:'No. We provide guidance, assistance and support through every stage — course selection, applications, documents and follow-up. Admission decisions always rest with the colleges and universities.'},
+ {q:'Which parts of Kerala do you serve?',a:'All of it. Counselling happens over phone and WhatsApp, so students from any district — and Malayalam speakers anywhere — can reach us easily.'}
+];
+
+const HOW_STEPS = [
+ ['Discover','Tell us about your interests, academic background and goals.'],
+ ['Explore','Discover courses and colleges that match your profile.'],
+ ['Compare','Understand eligibility, fees, location and opportunities.'],
+ ['Get Guidance','Speak with a Vistora education counsellor.'],
+ ['Move Forward','Get support throughout your admission journey.']
+];
+const ADM_STEPS = [
+ ['Course Selection','Shortlist courses that genuinely match your interests, marks and goals.'],
+ ['College Selection','Compare institutions based on what matters to your family — not brochures.'],
+ ['Eligibility Check','Know exactly what you qualify for before you apply anywhere.'],
+ ['Application Guidance','Understand the process, timelines and requirements, step by step.'],
+ ['Document Support','Get a clear checklist so nothing is missed at the last minute.'],
+ ['Admission Follow-up','Stay informed and supported through each stage of the process.']
+];
+const TRUST_ITEMS = [
+ ['Personalised Guidance','Advice based on the individual student, not a one-size-fits-all approach.'],
+ ['Clear Decisions','Understand your options before making a major education decision.'],
+ ['Course & College Support','Explore suitable academic pathways and institutions.'],
+ ['Admission Assistance','Get guidance through the admission journey.'],
+ ['Career-Focused Thinking','Understand what different education pathways can lead to.'],
+ ['Kerala-Focused','Built around the needs of students and families in Kerala.']
+];
+const PERSONAL = [
+ ['YOUR INTERESTS','What subjects and fields genuinely interest you? Not what is trending — what pulls you.','target'],
+ ['YOUR ACADEMIC BACKGROUND','Understand options based on your current qualifications and marks — realistically, not discouragingly.','book'],
+ ['YOUR PREFERENCES','Location, budget, course type and how you prefer to learn all shape the right fit.','layers'],
+ ['YOUR GOALS','Think beyond admission. Think about where you want to be five years from now.','eye']
+];
+const PROBLEMS_EN = ['Which course is right for me?','Which college should I choose?','Do my marks qualify?','What career opportunities will I have?','How much will it cost?','How does the admission process work?'];
+const PROBLEMS_ML = ['ഏത് College ആണ് നല്ലത്?','എന്റെ Mark അനുസരിച്ച് എന്തൊക്കെ Options ഉണ്ട്?','Degree കഴിഞ്ഞാൽ Career Opportunities എന്തൊക്കെയാണ്?','Admission എങ്ങനെ ചെയ്യണം?'];
+const NEED_OPTIONS = ['Course Selection','College Selection','Career Guidance','Admission Assistance','Not Sure Yet'];
+const CHAIN = [
+ ['INTEREST','Start with what genuinely interests you — the subjects you enjoy are data, not distraction.'],
+ ['COURSE','A course is the vehicle, not the destination. Choose it for where it can take you.'],
+ ['SKILLS','What you build along the way — projects, communication, real ability — matters as much as the certificate.'],
+ ['CAREER','Roles and fields your education can realistically lead to, understood honestly.'],
+ ['OPPORTUNITIES','Industries evolve. When your direction is clear, your skills travel with you.']
+];
+
+/* ---------------- HELPERS & STORE ---------------- */
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,7);
+const waLink=(m=WA_MSG)=>`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(m)}`;
+
+const Store = {
+  kLeads:'vistora_leads', kFaqs:'vistora_faqs',
+  all(){try{return JSON.parse(localStorage.getItem(this.kLeads))||[]}catch(e){return[]}},
+  saveAll(a){localStorage.setItem(this.kLeads,JSON.stringify(a))},
+  add(l){const a=this.all();a.unshift(l);this.saveAll(a)},
+  setStatus(id,s){const a=this.all();const r=a.find(x=>x.id===id);if(r){r.status=s;this.saveAll(a)}},
+  remove(id){this.saveAll(this.all().filter(x=>x.id!==id))},
+  faqs(){try{return JSON.parse(localStorage.getItem(this.kFaqs))||DEFAULT_FAQS}catch(e){return DEFAULT_FAQS}},
+  saveFaqs(f){localStorage.setItem(this.kFaqs,JSON.stringify(f))}
+};
+
+let toastT;
+function toast(msg){const t=$('#toast');t.innerHTML=ic('check')+esc(msg);t.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('show'),2600)}
+
+/* ---------------- SHARED COMPONENTS ---------------- */
+function pageHero(eyebrow,title,sub,dark=false){
+  return `<div class="section-tight ${dark?'navy on-dark':''}" style="padding-bottom:0;position:relative;overflow:hidden">
+    ${starchart('')}<div class="wrap" style="position:relative;padding-top:clamp(20px,3vw,36px);padding-bottom:clamp(44px,6vw,72px)">
+      <span class="eyebrow">${eyebrow}</span><h1 class="h2" style="font-size:clamp(40px,5.6vw,66px);max-width:820px">${title}</h1>
+      ${sub?`<p class="lead">${sub}</p>`:''}
+    </div></div>`;
+}
+function bandCTA(title,btn,onclickAttr){
+  return `<div class="section-tight navy on-dark"><div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:26px;flex-wrap:wrap">
+    <h3 class="serif" style="font-size:clamp(24px,3vw,34px);max-width:560px">${title}</h3>
+    <button class="btn btn-gold" ${onclickAttr||'data-open-lead'}>${btn} ${ic('arrow')}</button></div></div>`;
+}
+function leadFormHTML(prefix,compact=false){
+  const courseOpts=['<option value="">Select a course area (optional)</option>',...COURSE_CATS.map(c=>`<option>${c[0]}</option>`),'<option>Not sure yet</option>'].join('');
+  return `
+  ${prefix==='modal'?`<h3 id="lead-t">Get Free Counselling</h3><p class="msub">Answer a few questions and discover suitable options — a Vistora counsellor will help you explore them.</p>`:''}
+  <form id="${prefix}-form" novalidate>
+    <div class="f-row">
+      <div class="field"><label for="${prefix}-name">Full Name <span>*</span></label>
+        <input class="input" id="${prefix}-name" name="name" autocomplete="name" placeholder="Your full name"><div class="err">Please enter your name.</div></div>
+      <div class="field"><label for="${prefix}-phone">WhatsApp Number <span>*</span></label>
+        <input class="input" id="${prefix}-phone" name="phone" inputmode="numeric" autocomplete="tel" placeholder="10-digit mobile number"><div class="err">Enter a valid 10-digit Indian mobile number.</div></div>
+    </div>
+    <div class="f-row">
+      <div class="field"><label for="${prefix}-qual">Current Qualification <span>*</span></label>
+        <select class="select" id="${prefix}-qual" name="qualification"><option value="">Select…</option><option>After 10th</option><option>Plus Two (+2)</option><option>Degree (UG)</option><option>Postgraduate</option><option>Other</option></select>
+        <div class="err">Please select your qualification.</div></div>
+      <div class="field"><label for="${prefix}-stream">Stream</label>
+        <select class="select" id="${prefix}-stream" name="stream"><option value="">Select (optional)</option><option>Science</option><option>Commerce</option><option>Humanities / Arts</option><option>Other</option></select></div>
+    </div>
+    <div class="f-row">
+      <div class="field"><label for="${prefix}-marks">Marks / Percentage</label>
+        <input class="input" id="${prefix}-marks" name="marks" placeholder="e.g. 85% (optional)"></div>
+      <div class="field"><label for="${prefix}-course">Interested Course</label>
+        <select class="select" id="${prefix}-course" name="course">${courseOpts}</select></div>
+    </div>
+    <div class="field"><label for="${prefix}-loc">Preferred Location</label>
+      <select class="select" id="${prefix}-loc" name="location"><option value="">Anywhere in Kerala (default)</option><option>Anywhere in Kerala</option>${DISTRICTS.map(d=>`<option>${d}</option>`).join('')}<option>Outside Kerala</option></select></div>
+    <div class="field"><label>What do you need help with? <span>*</span></label>
+      <div class="opt-chips">${NEED_OPTIONS.map((o,i)=>`<input type="radio" name="need" id="${prefix}-need${i}" value="${o}" ${i===0?'checked':''}><label for="${prefix}-need${i}">${o}</label>`).join('')}</div></div>
+    <button type="submit" class="btn btn-gold" style="width:100%">Get My Personalised Guidance ${ic('arrow')}</button>
+    <p class="small-note" style="margin-top:12px;text-align:center">Free session · No obligation · We respond on WhatsApp first</p>
+  </form>`;
+}
+const SENT_HTML = (name)=>`<div class="sent">
+  <div class="ok-ring">${ic('check')}</div>
+  <h3>Thank you! Your enquiry has been received.</h3>
+  <p>${name?esc(name).split(' ')[0]+', a':false||'A'} Vistora counsellor will contact you soon. Want a faster response?</p>
+  <div class="stack">
+    <a class="btn btn-navy" href="${waLink('Hi Vistora Edu, I just submitted an enquiry. I would like personalised guidance about choosing a course/college.')}" target="_blank" rel="noopener">${ic('whatsapp')} Chat on WhatsApp</a>
+    <button class="btn btn-line" data-close>Done</button>
+  </div></div>`;
+
+function bindForm(prefix,source,isModal){
+  const form=document.getElementById(`${prefix}-form`); if(!form)return;
+  form.addEventListener('submit',e=>{
+    e.preventDefault();
+    const f=form.elements; let ok=true;
+    const mark=(el,bad)=>{el.closest('.field').classList.toggle('bad',bad);if(bad)ok=false};
+    const phoneOK=/^(\+?91[\-\s]?)?[6-9]\d{9}$/.test(f.phone.value.replace(/[\s\-]/g,''));
+    mark(f.name, f.name.value.trim().length<3);
+    mark(f.phone, !phoneOK);
+    mark(f.qualification, !f.qualification.value);
+    form.querySelectorAll('.input,.select').forEach(el=>el.addEventListener('input',()=>el.closest('.field').classList.remove('bad'),{once:true}));
+    if(!ok){ (form.querySelector('.field.bad .input,.field.bad .select')||{}).focus?.(); return; }
+    Store.add({id:uid(),date:Date.now(),status:'New',source,
+      name:f.name.value.trim(),phone:f.phone.value.trim(),qualification:f.qualification.value,
+      stream:f.stream.value,marks:f.marks.value.trim(),course:f.course.value,
+      location:f.location.value||'Anywhere in Kerala',need:f.need.value});
+    if(isModal){ $('#lead-body').innerHTML=SENT_HTML(f.name.value.trim()); }
+    else{ form.outerHTML=SENT_HTML(f.name.value.trim()); }
+    toast('Enquiry received — a counsellor will contact you');
+  });
+}
+
+/* ---------------- COLLEGE EXPLORER (shared: home + colleges page) ---------------- */
+function collegeCard(c,compact=false){
+  return `<article class="ccard" data-reveal>
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px">
+      <h3 class="serif" style="font-size:20px">${esc(c.name)}</h3><span class="badge outline">Sample data</span></div>
+    <div class="crow">${ic('pin')}<span>${esc(c.city)}, ${esc(c.district)} district</span></div>
+    <div class="cmeta"><span class="tag">${esc(c.type)}</span><span class="tag">${esc(c.admission)}</span></div>
+    <div class="crow">${ic('bookopen')}<span>${c.courses.slice(0,3).map(esc).join(' · ')}${c.courses.length>3?` +${c.courses.length-3}`:''}</span></div>
+    <div class="crow">${ic('check')}<span>Eligibility: ${esc(c.eligibility)}</span></div>
+    <div class="fee">${esc(c.fee)}</div>
+    <div class="actions">
+      <button class="btn btn-navy btn-sm" data-col="${c.id}">View Details</button>
+      ${compact?'':`<button class="btn btn-line btn-sm" data-open-lead data-need="Admission Assistance">Enquire</button>`}
+    </div></article>`;
+}
+function explorerHTML(pre,headingNote=''){
+  return `<div class="adm-filters" style="margin-bottom:22px">
+      <div style="position:relative;flex:1;min-width:220px">${ic('search','')}
+        <input class="input grow" id="${pre}-q" style="width:100%;padding-left:42px" placeholder="Search colleges…" aria-label="Search colleges"></div>
+      <select class="select" id="${pre}-d" aria-label="District"><option value="">All Districts</option>${DISTRICTS.map(d=>`<option>${d}</option>`).join('')}</select>
+      <select class="select" id="${pre}-t" aria-label="College type"><option value="">All Types</option><option>Government</option><option>Private</option></select>
+      <select class="select" id="${pre}-b" aria-label="Budget"><option value="">Any Budget</option><option value="budget">Under ₹25k / yr</option><option value="mid">₹25k – ₹1L / yr</option><option value="value">₹1L – ₹3L / yr</option><option value="premium">Above ₹3L / yr</option></select>
+    </div>
+    ${headingNote?`<p class="small-note" style="margin-bottom:14px;display:flex;gap:8px;align-items:center">${ic('eye')} ${headingNote}</p>`:''}
+    <p id="${pre}-count" class="small-note" style="margin-bottom:16px"></p>
+    <div class="cgrid" id="${pre}-res" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px"></div>`;
+}
+function renderColleges(pre,state){
+  const q=state.q.toLowerCase();
+  const list=COLLEGES.filter(c=>
+    (!state.d||c.district===state.d)&&(!state.t||c.type===state.t)&&(!state.b||c.band===state.b)&&
+    (!q||(c.name+c.city+c.district+c.courses.join(' ')).toLowerCase().includes(q)));
+  const box=document.getElementById(`${pre}-res`); if(!box)return;
+  document.getElementById(`${pre}-count`).textContent=list.length?`${list.length} institution${list.length>1?'s':''} found`:'';
+  box.innerHTML=list.length?list.map(c=>collegeCard(c)).join(''):
+    `<div class="empty" style="grid-column:1/-1">${ic('search')}<p>No sample entries match these filters.</p><p class="small-note">Try widening your filters — or ask a counsellor directly.</p></div>`;
+  initReveal(box);
+  $$('[data-col]',box).forEach(b=>b.addEventListener('click',()=>openCollege(b.dataset.col)));
+}
+function bindExplorer(pre){
+  const state={q:'',d:'',t:'',b:''};
+  const rer=()=>renderColleges(pre,state);
+  document.getElementById(`${pre}-q`).addEventListener('input',e=>{state.q=e.target.value;rer()});
+  ['d','t','b'].forEach(k=>document.getElementById(`${pre}-${k}`).addEventListener('change',e=>{state[k]=e.target.value;rer()}));
+  rer();
+}
+function openCollege(id){
+  const c=COLLEGES.find(x=>x.id===id); if(!c)return;
+  $('#col-slide').innerHTML=`
+    <button class="modal-x" data-close-slide aria-label="Close details">${ic('close')}</button>
+    <span class="badge outline">Sample entry — replace with verified data</span>
+    <h3>${esc(c.name)}</h3>
+    <div class="crow">${ic('pin')}<span>${esc(c.city)}, ${esc(c.district)} · ${esc(c.type)} institution</span></div>
+    <div class="sec"><h4>About</h4><p style="font-size:15px;color:var(--mut)">${esc(c.about)}</p></div>
+    <div class="sec"><h4>Courses Offered</h4><ul>${c.courses.map(x=>`<li class="tag">${esc(x)}</li>`).join('')}</ul></div>
+    <div class="sec"><h4>Eligibility</h4><p style="font-size:15px;color:var(--mut)">${esc(c.eligibility)}</p></div>
+    <div class="sec"><h4>Admission Information</h4><p style="font-size:15px;color:var(--mut)">Admission mode: <b>${esc(c.admission)}</b>. Exact timelines and counselling rounds vary each year — a Vistora counsellor can guide you through the current process.</p></div>
+    <div class="sec"><h4>Facilities</h4><ul>${c.facilities.map(x=>`<li class="tag">${esc(x)}</li>`).join('')}</ul></div>
+    <div class="sec"><h4>Indicative Fee</h4><p class="fee">${esc(c.fee)}</p></div>
+    <div class="sec"><h4>Contact</h4><p class="small-note">Contact details will appear here once verified institution information is added.</p></div>
+    <div class="sec" style="display:grid;gap:10px">
+      <button class="btn btn-gold" data-open-lead data-need="Admission Assistance" data-close-slide>Enquire About This College ${ic('arrow')}</button>
+      <a class="btn btn-line" href="${waLink(`Hi Vistora Edu, I would like to know more about ${c.name} (${c.district}).`)}" target="_blank" rel="noopener">${ic('whatsapp')} Ask on WhatsApp</a>
+    </div>`;
+  $('#slide-ov').classList.add('open'); $('#col-slide').classList.add('open');
+  $$('[data-col]').forEach(b=>b.onclick=null);
+  bindLeadTriggers($('#col-slide'));
+  $('#col-slide [data-close-slide]').addEventListener('click',closeSlide);
+  $('#col-slide [data-close-slide]:not(.modal-x)')?.addEventListener('click',closeSlide);
+}
+function closeSlide(){$('#col-slide').classList.remove('open');$('#slide-ov').classList.remove('open')}
+const legal={privacy:{t:'Privacy Policy',b:`<p class="small-note" style="margin-bottom:16px"><b>Template content — have this reviewed by legal counsel before publishing.</b></p><p style="font-size:15px;color:var(--mut)">Vistora Edu collects only the information you share through our enquiry forms — your name, contact number and study preferences — for the sole purpose of providing education guidance. We do not sell your data, and student information is never displayed publicly. You may ask us to update or delete your details at any time by contacting us. Replace this template with a policy drafted for your actual data practices.</p>`},
+terms:{t:'Terms & Conditions',b:`<p class="small-note" style="margin-bottom:16px"><b>Template content — have this reviewed by legal counsel before publishing.</b></p><p style="font-size:15px;color:var(--mut)">Vistora Edu provides education and career guidance, counselling and admission assistance. We do not guarantee admission to any institution; admission decisions rest entirely with the respective colleges and universities. Information on this website, including fees and eligibility, is indicative and should be verified with the institution. Replace this template with terms drafted for your actual service model.</p>`}};
+function openLegal(k){$('#legal-body').innerHTML=`<h3 class="serif" style="font-size:26px;margin-bottom:14px">${legal[k].t}</h3>${legal[k].b}`;$('#legal-ov').classList.add('open')}
+
+/* ---------------- VIEWS ---------------- */
+const view={};
+
+view.home=()=>`
+<!-- HERO -->
+<section class="hero">
+  ${starchart('')}
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow" data-reveal>Education &amp; Career Guidance · Kerala</span>
+        <h1 data-reveal style="--d:.06s">YOUR FUTURE.<br>YOUR <em class="acc">CHOICE</em>.</h1>
+        <p class="desc" data-reveal style="--d:.12s"><b style="color:var(--ink)">Find the right course. Choose the right college. Build the future you want.</b><br><br>Vistora Edu provides personalised course, college, career and admission guidance for students across Kerala.</p>
+        <div class="hero-ctas" data-reveal style="--d:.18s">
+          <button class="btn btn-navy" data-open-lead>Get Free Counselling ${ic('arrow')}</button>
+          <a class="btn btn-line" href="#/courses">Explore Courses</a>
+        </div>
+      </div>
+      <div class="hero-visual" data-reveal style="--d:.15s">
+        <div class="arch">
+          <span class="arch-frame" aria-hidden="true"></span>
+          <!-- Replace with a real photograph: a confident Kerala student / counselling session -->
+          <img src="https://picsum.photos/seed/vistora-hero/900/1125.jpg" alt="A confident student looking toward her future" fetchpriority="high">
+          <span class="arch-cap">${star('')}&nbsp;Personalised Guidance</span>
+        </div>
+        <div class="path-card" role="complementary">
+          <h3 class="serif">NOT SURE WHAT TO CHOOSE?</h3>
+          <p>Answer a few questions and discover suitable options.</p>
+          <button class="tlink" data-open-lead data-need="Not Sure Yet" data-sub="1">Find My Path ${ic('arrow')}</button>
+        </div>
+      </div>
+    </div>
+    <div class="trust-line" data-reveal>
+      <span>Personalised Guidance</span>${star('starsep')}<span>Course Selection</span>${star('starsep')}<span>College Selection</span>${star('starsep')}<span>Admission Support</span>
+    </div>
+  </div>
+</section>
+
+<!-- THE REAL PROBLEM -->
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow" data-reveal>The Real Problem</span>
+    <h2 class="h2" data-reveal style="--d:.05s">Not sure what to choose after +2?</h2>
+    <p class="lead" data-reveal style="--d:.1s">Choosing a course is one of the biggest decisions a student makes. These questions are normal — every student asks them.</p>
+    <div class="chips" style="margin-top:40px">
+      ${PROBLEMS_EN.map((q,i)=>`<span class="chip" data-reveal style="--r:${[-2.4,1.8,-1.2,2.2,-1.8,1.4][i]}deg;--d:${.08*i}s">${q}</span>`).join('')}
+    </div>
+    <div class="resolve" data-reveal>
+      <h3>You have options. <em class="acc">We help you understand them.</em></h3>
+      <p class="lead" style="font-size:16.5px">Vistora helps students make education decisions based on their interests, academic background, preferences and future goals — so the choice is yours, made with confidence.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MALAYALAM CONNECTION -->
+<section class="section navy on-dark" style="position:relative;overflow:hidden">
+  ${starchart('', 'style="left:-180px;bottom:-140px;color:#fff;opacity:.6"')}
+  <div class="wrap" style="position:relative">
+    <div class="grid-2">
+      <div>
+        <span class="eyebrow" data-reveal>മലയാളത്തിൽ</span>
+        <h2 class="h2" data-reveal style="--d:.05s" lang="ml">ഏത് Course എടുക്കണം എന്ന് Confusion ആണോ?</h2>
+        <div style="display:grid;gap:0;margin-top:26px">
+          ${PROBLEMS_ML.map((q,i)=>`<div class="eg-row" data-reveal style="--d:${.06*i}s;border-color:var(--line-l)">${star('starsep')}<span lang="ml" style="font-size:16.5px;color:#DCE3EA">${q}</span></div>`).join('')}
+        </div>
+      </div>
+      <div data-reveal style="--d:.15s">
+        <h3 class="serif" style="font-size:clamp(30px,4vw,46px);line-height:1.15" lang="ml">നിങ്ങളുടെ Future.<br>നിങ്ങളുടെ <em class="acc">Choice</em>.</h3>
+        <p class="lead" lang="ml" style="margin-top:16px;color:var(--mut-l)"><b style="color:#fff">ശരിയായ തീരുമാനം എടുക്കാൻ Vistora കൂടെയുണ്ട്.</b></p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:30px">
+          <button class="btn btn-gold" data-open-lead>Talk to a Counsellor ${ic('arrow')}</button>
+          <a class="btn btn-light" href="${waLink('Hi Vistora Edu, എനിക്ക് course selection ഒരു കാര്യം ചോദിക്കണം.')}" target="_blank" rel="noopener">${ic('whatsapp')} WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow" data-reveal>How Vistora Works</span>
+    <h2 class="h2" data-reveal style="--d:.05s">From Confusion to <em class="acc">Confidence</em>.</h2>
+    <div class="steps" data-steps data-reveal>
+      ${HOW_STEPS.map((s,i)=>`<div class="step"><span class="step-num serif">0${i+1}</span><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join('')}
+    </div>
+    <div style="margin-top:clamp(36px,5vw,56px)" data-reveal><button class="btn btn-navy" data-open-lead>Start With Step 01 — It's Free ${ic('arrow')}</button></div>
+  </div>
+</section>
+
+<!-- COURSE INDEX -->
+<section class="section paper-2">
+  <div class="wrap split-l">
+    <div style="position:sticky;top:110px" data-reveal>
+      <span class="eyebrow">Course Explorer</span>
+      <h2 class="h2">Explore Your <em class="acc">Possibilities</em></h2>
+      <p class="lead">There is more than one path to a successful future. Start with a direction that interests you.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px">
+        <a class="btn btn-navy" href="#/courses">Explore All Courses ${ic('arrow')}</a>
+        <button class="btn btn-line" data-open-lead data-need="Course Selection">Not Sure? Get Guidance</button>
+      </div>
+    </div>
+    <div class="idx" data-reveal style="--d:.1s">
+      ${COURSE_CATS.map((c,i)=>`<a href="#/courses?stream=${encodeURIComponent(catStream(c[0]))}">
+        <span class="n">${String(i+1).padStart(2,'0')}</span><span class="t">${c[0]}</span><span class="arr">${ic('arrow')}</span>
+        <span class="d">${c[1]}</span></a>`).join('')}
+    </div>
+  </div>
+</section>
+
+<!-- COLLEGE EXPLORER -->
+<section class="section">
+  <div class="wrap">
+    <div style="max-width:640px" data-reveal>
+      <span class="eyebrow">College Explorer</span>
+      <h2 class="h2">The Right Course Deserves the <em class="acc">Right College</em>.</h2>
+      <p class="lead">Explore colleges based on your course, location, eligibility and preferences.</p>
+    </div>
+    <div style="margin-top:clamp(30px,4vw,48px)" data-reveal>${explorerHTML('home','Colleges below are clearly-marked sample entries. Verified institutional data will replace them.')}</div>
+    <div style="margin-top:32px" data-reveal><a class="btn btn-navy" href="#/colleges">Explore Colleges ${ic('arrow')}</a></div>
+  </div>
+</section>
+
+<!-- CAREER PATHWAYS -->
+<section class="section navy on-dark" style="position:relative;overflow:hidden">
+  ${starchart('','style="right:-200px;top:-160px;color:#fff;opacity:.5"')}
+  <div class="wrap" style="position:relative">
+    <div style="max-width:660px">
+      <span class="eyebrow" data-reveal>Career Guidance</span>
+      <h2 class="h2" data-reveal style="--d:.05s">Don't Choose a Course. <em class="acc">Choose a Direction.</em></h2>
+      <p class="lead" data-reveal style="--d:.1s;color:var(--mut-l)">A course is only one part of your future. Understand where your education can take you.</p>
+    </div>
+    <div class="chain" data-reveal style="--d:.12s" id="home-chain">
+      ${CHAIN.map((c,i)=>`<button class="chain-node ${i===0?'on':''}" data-i="${i}"><span>${c[0]}</span><b class="serif">0${i+1}</b></button>`).join('')}
+    </div>
+    <p class="chain-desc" id="home-chain-desc">${CHAIN[0][1]}</p>
+    <div style="margin-top:clamp(30px,4vw,46px)">
+      ${[['Computer Science','Software Development','Technology Careers'],['Commerce','Finance / Accounting','Professional Careers'],['Design','Visual Communication','Creative Careers'],['Healthcare','Allied Health','Healthcare Careers']]
+      .map((e,i)=>`<div class="eg-row" data-reveal style="--d:${.05*i}s;border-color:var(--line-l)"><b style="color:#fff">${e[0]}</b>${ic('arrow')}<span style="color:var(--mut-l)">${e[1]}</span>${ic('arrow')}<span class="fin">${e[2]}</span></div>`).join('')}
+      <p class="small-note" style="margin-top:14px">Examples are illustrative pathways to help you think — not promises of employment.</p>
+      <div style="margin-top:26px"><a class="btn btn-gold" href="#/career">Explore Career Paths ${ic('arrow')}</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- PERSONALISATION -->
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow" data-reveal>Personalised Guidance</span>
+    <h2 class="h2" data-reveal style="--d:.05s">Because Every Student Is <em class="acc">Different</em>.</h2>
+    <div class="ruled" data-reveal>
+      ${PERSONAL.map((p,i)=>`<div>${ic(p[2],'ric')}<span class="rn">0${i+1}</span><h3>${p[0]}</h3><p>${p[1]}</p></div>`).join('')}
+    </div>
+    <div style="text-align:center;margin-top:clamp(48px,6vw,72px)" data-reveal>
+      <p class="serif" style="font-size:clamp(26px,3.6vw,40px);line-height:1.25">Your future shouldn't be chosen by trends.<br><em class="acc">It should be chosen by you.</em></p>
+    </div>
+  </div>
+</section>
+
+<!-- PARENTS -->
+<section class="section paper-2">
+  <div class="wrap grid-2">
+    <div data-reveal>
+      <div class="arch" style="border-radius:22px 210px 210px 22px;max-width:100%;aspect-ratio:5/4">
+        <span class="arch-frame" style="transform:translate(-16px,16px);border-radius:22px 210px 210px 22px"></span>
+        <!-- Replace with a real photograph -->
+        <img loading="lazy" src="https://picsum.photos/seed/vistora-family/1000/800.jpg" alt="A parent and student discussing education options together">
+      </div>
+    </div>
+    <div>
+      <span class="eyebrow" data-reveal>For Parents</span>
+      <h2 class="h2" data-reveal style="--d:.05s;font-size:clamp(30px,3.8vw,44px)">For Students, It's a Career.<br><em class="acc">For Parents, It's Their Child's Future.</em></h2>
+      <p class="lead" data-reveal style="--d:.1s">Choosing higher education can feel overwhelming for the whole family. Vistora helps students and parents understand their options clearly before making an important decision.</p>
+      <div style="margin-top:26px">
+        ${[['Clear Information','No jargon, no pressure — just complete, honest details about every option.'],['Personalised Guidance','Advice built around your child\u2019s marks, interests and your family\u2019s budget.'],['Admission Support','A steady hand through applications, documents and follow-up.']]
+        .map((b,i)=>`<div class="eg-row" data-reveal style="--d:${.06*i}s">${ic('check')}<div><b style="font:800 15.5px var(--f-b);display:block;color:var(--ink)">${b[0]}</b><span style="font-size:14px;color:var(--mut)">${b[1]}</span></div></div>`).join('')}
+      </div>
+      <div style="margin-top:30px" data-reveal><button class="btn btn-navy" data-open-lead>Talk to a Vistora Counsellor ${ic('arrow')}</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- ADMISSION ASSISTANCE -->
+<section class="section">
+  <div class="wrap split-l">
+    <div style="position:sticky;top:110px" data-reveal>
+      <span class="eyebrow">Admission Assistance</span>
+      <h2 class="h2">From Choosing a College to <em class="acc">Taking the Next Step</em>.</h2>
+      <p class="lead">Admissions involve many small steps. We help you get each one right, in the right order.</p>
+      <div style="margin-top:26px"><button class="btn btn-navy" data-open-lead data-need="Admission Assistance">Get Admission Assistance ${ic('arrow')}</button></div>
+    </div>
+    <div class="tl" data-reveal>
+      ${ADM_STEPS.map((s,i)=>`<div class="tl-item"><span class="tn">0${i+1}</span><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join('')}
+      <p class="small-note" style="margin-top:6px">Vistora provides guidance, assistance and support. Admission decisions rest with colleges and universities.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LEAD GENERATION -->
+<section class="section navy on-dark" style="position:relative;overflow:hidden">
+  ${starchart('','style="left:-220px;top:-180px;color:#fff;opacity:.45"')}
+  <div class="wrap grid-2" style="position:relative;align-items:start">
+    <div>
+      <span class="eyebrow" data-reveal>Start Here</span>
+      <h2 class="h2" data-reveal style="--d:.05s">Let's Find Your <em class="acc">Best Options</em>.</h2>
+      <p class="lead" data-reveal style="--d:.1s;color:var(--mut-l)">Tell us a little about yourself and our counsellors can help you explore suitable education pathways.</p>
+      <div style="margin-top:28px;display:grid;gap:14px">
+        ${['Free first session — no obligation','Guidance in Malayalam or English','We contact you on WhatsApp, at your convenience'].map((t,i)=>`<div class="crow" data-reveal style="--d:${.1+i*.06}s">${ic('check')}<span style="color:#DCE3EA">${t}</span></div>`).join('')}
+      </div>
+    </div>
+    <div class="panel" data-reveal style="--d:.12s" id="home-lead-wrap">${leadFormHTML('home')}</div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS (honest placeholders) -->
+<section class="section">
+  <div class="wrap">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap">
+      <div><span class="eyebrow" data-reveal>Testimonials</span>
+      <h2 class="h2" data-reveal style="--d:.05s">Guidance That Makes a <em class="acc">Difference</em>.</h2></div>
+      <span class="badge outline" data-reveal>Placeholders — awaiting real student reviews</span>
+    </div>
+    <div class="t-grid">
+      ${[1,2,3].map(i=>`<div class="t-slot" data-reveal style="--d:${.08*i}s">
+        <div class="ph-ava">${ic('user')}</div>
+        <p class="ph-quote">"Student testimonial goes here."</p>
+        <div class="ph-meta"><b>Student Name</b>Course · College · Review<br>Photo: 72×72 px portrait</div>
+      </div>`).join('')}
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="section paper-2">
+  <div class="wrap">
+    <span class="eyebrow" data-reveal>Why Vistora</span>
+    <h2 class="h2" data-reveal style="--d:.05s">Why Students Choose <em class="acc">Vistora</em></h2>
+    <div class="ruled" data-reveal style="--d:.08s">
+      ${TRUST_ITEMS.map((t,i)=>`<div>${star('ric')}<h3 style="font-family:var(--f-b);font-weight:800;font-size:16px;letter-spacing:.1em;text-transform:uppercase">${t[0]}</h3><p>${t[1]}</p></div>`).join('')}
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section navy on-dark" style="text-align:center;position:relative;overflow:hidden">
+  ${starchart('','style="left:50%;top:50%;transform:translate(-50%,-50%);width:900px;color:#fff;opacity:.5"')}
+  <div class="wrap" style="position:relative">
+    <h2 data-reveal style="font-size:clamp(46px,8vw,96px);line-height:.98">YOUR FUTURE.<br>YOUR <em class="acc">CHOICE</em>.</h2>
+    <p class="lead" data-reveal style="--d:.08s;margin:26px auto 0;color:var(--mut-l)">You don't need to have everything figured out today.<br><b style="color:#fff">You just need the right guidance to take the next step.</b></p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:36px" data-reveal style="--d:.14s">
+      <button class="btn btn-gold" data-open-lead>Get Personalised Counselling ${ic('arrow')}</button>
+      <a class="btn btn-light" href="#/courses">Explore Courses</a>
+    </div>
+  </div>
+</section>`;
+
+function catStream(cat){
+  return ({'Engineering':'Science','Medicine':'Science','Nursing & Allied Health':'Science','Computer Science & IT':'Science','Commerce & Finance':'Commerce','Management':'Any stream','Design & Architecture':'Any stream','Law':'Any stream','Arts & Humanities':'Arts & Humanities','Media & Communication':'Any stream','Professional Courses':'Commerce'})[cat]||'';
+}
+function bindHome(){
+  bindForm('home','Home — Lead Section',false);
+  bindChain('home');
+  bindExplorer('home');
+}
+function bindChain(pre){
+  const nodes=$$(`#${pre}-chain .chain-node`),desc=$(`#${pre}-chain-desc`);if(!nodes.length)return;
+  nodes.forEach(n=>n.addEventListener('click',()=>{nodes.forEach(x=>x.classList.remove('on'));n.classList.add('on');desc.textContent=CHAIN[+n.dataset.i][1]}));
+}
+
+/* ---------- COURSES PAGE ---------- */
+view.courses=(params)=>{
+  const preset=params.get('stream')||'';
+  return `${pageHero('Find Courses','Find a Course That <em class="acc">Fits Your Future</em>.','Search courses, understand eligibility, and see where each path can lead — before you decide.')}
+<section class="section" style="padding-top:clamp(36px,5vw,56px)"><div class="wrap">
+  <div class="adm-filters">
+    <div style="position:relative;flex:1;min-width:220px"><input class="input" id="cq" style="width:100%" placeholder="Search courses…" aria-label="Search courses"></div>
+    <select class="select" id="c-stream" aria-label="Stream"><option value="">All Streams</option>${['Science','Commerce','Arts & Humanities','Any stream'].map(s=>`<option ${s===preset?'selected':''}>${s}</option>`).join('')}</select>
+    <select class="select" id="c-level" aria-label="Level"><option value="">All Levels</option><option>Undergraduate</option><option>Professional</option></select>
+    <select class="select" id="c-int" aria-label="Interest"><option value="">Any Interest</option>${['Technology','Healthcare','Business','Design','Law','Media','People & Society'].map(s=>`<option>${s}</option>`).join('')}</select>
+    <select class="select" id="c-dur" aria-label="Duration"><option value="">Any Duration</option><option>3 Years</option><option>4 Years</option><option>5+ Years</option></select>
+  </div>
+  <p id="c-count" class="small-note" style="margin:8px 0 6px"></p>
+  <div class="idx" id="c-res"></div>
+  <div class="panel navy on-dark" style="margin-top:clamp(44px,6vw,64px);display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;background:var(--navy)">
+    <div><h3 class="serif" style="font-size:clamp(22px,2.6vw,30px)">Not sure what fits you?</h3>
+    <p style="color:var(--mut-l);margin-top:6px">That's exactly what our counsellors are for.</p></div>
+    <button class="btn btn-gold" data-open-lead data-need="Course Selection">Get Personalised Guidance ${ic('arrow')}</button>
+  </div>
+</div></section>`;
+};
+function bindCourses(){
+  const st={q:'',stream:'',level:'',int:'',dur:''};
+  const run=()=>{
+    const q=st.q.toLowerCase();
+    const list=COURSES.filter(c=>
+      (!st.stream||c.stream===st.stream)&&(!st.level||c.level===st.level)&&(!st.int||c.interest.includes(st.int))&&
+      (!st.dur||(st.dur==='3 Years'?c.duration.startsWith('3'):st.dur==='4 Years'?c.duration.startsWith('4'):/^5/.test(c.duration)))&&
+      (!q||(c.name+c.overview+c.careers.join(' ')+c.eligibility).toLowerCase().includes(q)));
+    $('#c-count').textContent=list.length?`${list.length} course${list.length>1?'s':''} found`:'';
+    $('#c-res').innerHTML=list.length?list.map((c,i)=>`
+      <div class="acc-item course-row" data-acc>
+        <button class="course-head acc-btn" aria-expanded="false">
+          <span class="n serif" style="font-style:italic;color:var(--gold-2);font-size:15px;flex:none">${String(i+1).padStart(2,'0')}</span>
+          <span><b class="serif" style="font-weight:560;font-size:clamp(19px,2.2vw,25px)">${esc(c.name)}</b>
+          <span style="display:block;font:600 12.5px var(--f-b);color:var(--mut);margin-top:3px">${esc(c.stream)} · ${esc(c.level)} · ${esc(c.duration)}</span></span>
+          ${ic('plus')}
+        </button>
+        <div class="acc-body" style="padding-left:clamp(4px,4vw,58px)">
+          <p style="max-width:640px">${esc(c.overview)}</p>
+          <div class="crow" style="margin-top:14px">${ic('check')}<span><b style="color:var(--ink)">Eligibility:</b> ${esc(c.eligibility)}</span></div>
+          <div class="crow" style="margin-top:8px">${ic('trend')}<span><b style="color:var(--ink)">Career pathways:</b> ${c.careers.map(esc).join(' · ')}</span></div>
+          <div style="margin-top:18px"><button class="btn btn-navy btn-sm" data-open-lead data-need="Course Selection" data-course="${esc(c.name)}">Get Guidance for This Course ${ic('arrow')}</button></div>
+        </div>
+      </div>`).join(''):
+      `<div class="empty">${ic('search')}<p>No courses match that search.</p><p class="small-note">Try a broader keyword — or ask a counsellor what else exists.</p></div>`;
+    $$('#c-res [data-acc]').forEach(row=>{
+      const btn=row.querySelector('.acc-btn');
+      btn.addEventListener('click',()=>{
+        const open=row.classList.toggle('open');btn.setAttribute('aria-expanded',open);
+      });
+    });
+  };
+  $('#cq').addEventListener('input',e=>{st.q=e.target.value;run()});
+  [['c-stream','stream'],['c-level','level'],['c-int','int'],['c-dur','dur']].forEach(([id,k])=>$('#'+id).addEventListener('change',e=>{st[k]=e.target.value;run()}));
+  run();
+}
+
+/* ---------- COLLEGES PAGE ---------- */
+view.colleges=()=>`
+ ${pageHero('Find Colleges','Find the Right College for <em class="acc">Your Goals</em>.','Compare institutions by district, course, type and budget — with clear eligibility and fee information.')}
+<section class="section" style="padding-top:clamp(36px,5vw,56px)"><div class="wrap">
+  ${explorerHTML('col','Showing clearly-marked sample entries for demonstration. Verified college information will replace these before launch.')}
+  <div class="panel navy on-dark" style="margin-top:clamp(44px,6vw,64px);display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;background:var(--navy)">
+    <div><h3 class="serif" style="font-size:clamp(22px,2.6vw,30px)">Can't decide between colleges?</h3>
+    <p style="color:var(--mut-l);margin-top:6px">A short conversation usually makes it obvious.</p></div>
+    <button class="btn btn-gold" data-open-lead data-need="College Selection">Talk to a Counsellor ${ic('arrow')}</button>
+  </div>
+</div></section>`;
+function bindColleges(){bindExplorer('col')}
+
+/* ---------- CAREER PAGE ---------- */
+view.career=()=>`
+ ${pageHero('Career Guidance','Your Career Starts With a <em class="acc">Choice</em>.','The course you choose shapes the direction you move in. Not forever — but it matters. Choosing with clarity now saves years later.')}
+<section class="section" style="padding-top:clamp(36px,5vw,56px)"><div class="wrap">
+  <div class="chain" id="pg-chain" data-reveal>${CHAIN.map((c,i)=>`<button class="chain-node ${i===0?'on':''}" data-i="${i}"><span>${c[0]}</span><b class="serif">0${i+1}</b></button>`).join('')}</div>
+  <p class="chain-desc" id="pg-chain-desc">${CHAIN[0][1]}</p>
+</div></section>
+<section class="section paper-2"><div class="wrap split-l">
+  <div style="position:sticky;top:110px" data-reveal>
+    <span class="eyebrow">The Process</span><h2 class="h2">Five Steps to a <em class="acc">Clear Direction</em></h2>
+    <p class="lead">Career clarity isn't a lightning bolt. It's a process — and you don't have to walk it alone.</p>
+  </div>
+  <div class="tl" data-reveal>
+    ${[['Understand Yourself','What subjects pull you in? What kind of work environment suits you? What problems do you enjoy solving? These answers come before any course name.'],
+       ['Explore Careers','Look at real career paths — talk to people, watch day-in-the-life stories, understand how fields are growing. Curiosity is research.'],
+       ['Choose Courses','Match courses to your direction, then check eligibility honestly against your marks. There is almost always more than one route.'],
+       ['Build Skills','The syllabus is the floor, not the ceiling. Projects, internships and communication skills are what separate candidates later.'],
+       ['Plan Your Future','Review your direction each year. Keep options open, set decision checkpoints, and adjust with intention — not panic.']]
+    .map((s,i)=>`<div class="tl-item"><span class="tn">0${i+1}</span><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join('')}
+  </div>
+</div></section>
+<section class="section"><div class="wrap">
+  <span class="eyebrow" data-reveal>Career Categories</span>
+  <h2 class="h2" data-reveal style="--d:.05s">Where Could Your <em class="acc">Interests</em> Lead?</h2>
+  <div class="ruled" data-reveal>
+    ${PATHS.map((p,i)=>`<div>${ic(p.icon,'ric')}<span class="rn">0${i+1}</span><h3>${p.title}</h3>
+      <div class="crow" style="margin-bottom:6px">${ic('target')}<span><b style="color:var(--ink)">Interest:</b> ${p.interest}</span></div>
+      <div class="crow" style="margin-bottom:6px">${ic('bookopen')}<span><b style="color:var(--ink)">Courses:</b> ${p.courses.join(' · ')}</span></div>
+      <div class="crow" style="margin-bottom:6px">${ic('tool')}<span><b style="color:var(--ink)">Skills:</b> ${p.skills.join(' · ')}</span></div>
+      <div class="crow">${ic('trend')}<span><b style="color:var(--ink)">Careers:</b> ${p.careers.join(' · ')}</span></div></div>`).join('')}
+  </div>
+  <p class="small-note" style="margin-top:20px" data-reveal>Pathways shown are for orientation and exploration — they describe directions, not guaranteed outcomes.</p>
+</div></section>
+ ${bandCTA('Want to talk through your direction with someone?','Get Career Guidance','data-open-lead data-need="Career Guidance"')}`;
+function bindCareer(){bindChain('pg')}
+
+/* ---------- ADMISSIONS PAGE ---------- */
+view.admissions=()=>`
+ ${pageHero('Admission Assistance','Make Your Admission Journey <em class="acc">Simpler</em>.','From choosing where to apply to submitting the last document — clear, honest support at every stage.')}
+<section class="section" style="padding-top:clamp(36px,5vw,56px)"><div class="wrap split-l">
+  <div style="position:sticky;top:110px" data-reveal>
+    <span class="eyebrow">The Journey</span><h2 class="h2">Six Stages. <em class="acc">One Steady Hand.</em></h2>
+    <p class="lead">Most admission stress comes from not knowing what comes next. We keep the whole picture in front of you.</p>
+    <div style="margin-top:26px"><button class="btn btn-navy" data-open-lead data-need="Admission Assistance">Get Admission Assistance ${ic('arrow')}</button></div>
+  </div>
+  <div class="tl" data-reveal>
+    ${ADM_STEPS.map((s,i)=>`<div class="tl-item"><span class="tn">0${i+1}</span><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join('')}
+  </div>
+</div></section>
+<section class="section paper-2"><div class="wrap grid-2">
+  <div data-reveal>
+    <span class="eyebrow">Documents</span><h2 class="h2" style="font-size:clamp(26px,3vw,36px)">A Clear <em class="acc">Checklist</em>, Not a Last-Minute Scramble</h2>
+    <p class="lead" style="font-size:16px">Typical documents kept ready for admissions:</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;margin-top:18px">
+      ${['Plus Two marklist','SSLC certificate','Transfer certificate','Aadhaar / ID proof','Passport-size photos','Income / caste certificates (if applicable)']
+      .map(d=>`<div class="crow">${ic('file')}<span>${d}</span></div>`).join('')}
+    </div>
+    <p class="small-note" style="margin-top:16px">Exact requirements vary by institution and round — your counsellor gives you the precise list for your case.</p>
+  </div>
+  <div class="panel" data-reveal style="border-color:var(--gold);background:var(--gold-soft)">
+    <h3 class="serif" style="font-size:24px;margin-bottom:12px">An honest note</h3>
+    <p style="font-size:15.5px;color:#4A3D1E">Vistora provides <b>guidance, assistance, support and counselling</b> throughout the admission journey. We do not — and cannot — guarantee admission. Admission decisions rest entirely with colleges and universities. Anyone promising otherwise should be treated with caution.</p>
+  </div>
+</div></section>
+ ${bandCTA('Ready to start your admission journey the organised way?','Get Admission Assistance','data-open-lead data-need="Admission Assistance"')}`;
+
+/* ---------- ABOUT PAGE ---------- */
+view.about=()=>`
+ ${pageHero('About Vistora','Guidance Built <em class="acc">Around You</em>.','Not a course-selling desk. A guidance partner.')}
+<section class="section" style="padding-top:clamp(36px,5vw,56px)"><div class="wrap grid-2">
+  <div data-reveal>
+    <div class="arch" style="aspect-ratio:4/3;border-radius:22px 200px 200px 22px;max-width:100%">
+      <span class="arch-frame" style="transform:translate(-16px,16px);border-radius:22px 200px 200px 22px"></span>
+      <!-- Replace with a real photograph -->
+      <img loading="lazy" src="https://picsum.photos/seed/vistora-about/1000/750.jpg" alt="A counsellor guiding a student through education options">
+    </div>
+  </div>
+  <div>
+    <span class="eyebrow" data-reveal>Our Philosophy</span>
+    <h2 class="h2" data-reveal style="--d:.05s;font-size:clamp(28px,3.4vw,40px)">Every student is different.<br>So our guidance is too.</h2>
+    <div style="display:grid;gap:16px;margin-top:8px;max-width:540px">
+      <p class="lead" style="font-size:16.5px" data-reveal>Every student has different strengths, interests, academic backgrounds and ambitions. A course that is perfect for one student can be completely wrong for another.</p>
+      <p class="lead" style="font-size:16.5px" data-reveal style="--d:.06s"><b style="color:var(--ink)">Our role is not to make the decision for you.</b> Our role is to help you understand your options clearly — eligibility, costs, colleges, career directions — so you can make an informed choice and stand behind it.</p>
+    </div>
+  </div>
+</div></section>
+<section class="section paper-2"><div class="wrap">
+  <div class="ruled" data-reveal style="grid-template-columns:1fr 1fr;background:#fff">
+    <div><h3 style="color:var(--gold-2);font-family:var(--f-b);font-weight:800;font-size:15px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px">What we do</h3>
+      ${['Listen first, recommend later','Explain every option clearly, including the uncomfortable parts','Involve parents in the conversation','Support you at your pace, without pressure'].map(t=>`<div class="crow" style="margin-bottom:10px">${ic('check')}<span>${t}</span></div>`).join('')}</div>
+    <div><h3 style="font-family:var(--f-b);font-weight:800;font-size:15px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px">What we don't do</h3>
+      ${['Push specific colleges for commissions','Make the decision for you','Promise admissions we can\u2019t control','Use urgency or fear to close a "deal"'].map(t=>`<div class="crow" style="margin-bottom:10px">${ic('close')}<span>${t}</span></div>`).join('')}</div>
+  </div>
+</div></section>
+<section class="section"><div class="wrap grid-2" style="align-items:stretch">
+  <div class="panel" data-reveal><span class="rn serif" style="font-style:italic;color:var(--gold-2);font-size:17px">Mission</span>
+    <h3 class="serif" style="font-size:24px;margin-bottom:10px">Make decisions simpler.</h3>
+    <p style="color:var(--mut)">To make education decisions simpler, clearer and more informed for students and families across Kerala.</p></div>
+  <div class="panel" data-reveal style="--d:.08s"><span class="rn serif" style="font-style:italic;color:var(--gold-2);font-size:17px">Vision</span>
+    <h3 class="serif" style="font-size:24px;margin-bottom:10px">A trusted guide for Kerala.</h3>
+    <p style="color:var(--mut)">To become a trusted education guidance platform for students across Kerala — the name families think of when a big decision approaches.</p></div>
+</div></section>
+<section class="section-tight navy on-dark" style="text-align:center">
+  <div class="wrap"><h2 class="serif" data-reveal style="font-size:clamp(32px,5vw,56px)">Your Future. <em class="acc">Your Choice.</em></h2>
+  <p class="lead" data-reveal style="--d:.06s;margin:14px auto 26px;color:var(--mut-l)">That's not just our tagline. It's how we work.</p>
+  <button class="btn btn-gold" data-open-lead>Get Free Counselling ${ic('arrow')}</button></div>
+</section>`;
+
+/* ---------- CONTACT PAGE ---------- */
+view.contact=()=>`
+ ${pageHero('Contact','Let\u2019s Talk About <em class="acc">Your Future</em>.','Reach us however you\u2019re comfortable — most families start on WhatsApp.')}
+<section class="section" style="padding-top:clamp(36px,5vw,56px)"><div class="wrap split-l" style="align-items:start">
+  <div>
+    ${[['whatsapp','WhatsApp','Fastest response — usually within working hours.',waLink(WA_MSG),'Message on WhatsApp',true],
+       ['phone','Phone',esc(CONFIG.phone),'tel:'+CONFIG.phone.replace(/\s/g,''),'Call now',false],
+       ['mail','Email',esc(CONFIG.email),'mailto:'+CONFIG.email,'Write to us',false]]
+    .map((c,i)=>`<div class="panel" data-reveal style="--d:${.06*i}s;margin-bottom:16px;display:flex;gap:18px;align-items:center">
+      <div style="width:48px;height:48px;flex:none;border:1px solid var(--line);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--gold-2)">${ic(c[0])}</div>
+      <div style="flex:1"><b style="font:800 15px var(--f-b)">${c[1]}</b><div style="font-size:14px;color:var(--mut)">${c[2]}</div></div>
+      <a class="btn btn-line btn-sm" href="${c[3]}" ${c[5]?'target="_blank" rel="noopener"':''}>${c[4]}</a></div>`).join('')}
+    <p class="small-note" data-reveal style="display:flex;gap:8px;align-items:center;margin-top:6px">${ic('pin')} Kerala, India — online &amp; phone counselling across all 14 districts.</p>
+  </div>
+  <div class="panel" data-reveal style="--d:.1s" id="contact-wrap">
+    <h3 class="serif" style="font-size:26px;margin-bottom:20px">Counselling Enquiry</h3>
+    <form id="ct-form" novalidate>
+      <div class="field"><label for="ct-name">Name <span>*</span></label><input class="input" id="ct-name" name="name" autocomplete="name"><div class="err">Please enter your name.</div></div>
+      <div class="field"><label for="ct-phone">Phone <span>*</span></label><input class="input" id="ct-phone" name="phone" inputmode="numeric"><div class="err">Enter a valid 10-digit number.</div></div>
+      <div class="field"><label for="ct-qual">Current Qualification</label><select class="select" id="ct-qual" name="qualification"><option value="">Select (optional)</option><option>After 10th</option><option>Plus Two (+2)</option><option>Degree (UG)</option><option>Postgraduate</option><option>Other</option></select></div>
+      <div class="field"><label for="ct-course">Interested Course</label><select class="select" id="ct-course" name="course"><option value="">Select (optional)</option>${COURSE_CATS.map(c=>`<option>${c[0]}</option>`).join('')}<option>Not sure yet</option></select></div>
+      <div class="field"><label for="ct-msg">Message</label><textarea class="textarea" id="ct-msg" name="message" placeholder="Tell us briefly what you need help with…"></textarea></div>
+      <button class="btn btn-gold" style="width:100%">Send Enquiry ${ic('send')}</button>
+    </form>
+  </div>
+</div></section>
+<section class="section-tight paper-2"><div class="wrap split-l">
+  <div data-reveal><span class="eyebrow">Common Questions</span><h2 class="h2" style="font-size:clamp(26px,3vw,38px)">Before You <em class="acc">Ask</em></h2>
+  <p class="lead" style="font-size:15.5px">These answers are managed from the Vistora admin dashboard — keep them current.</p></div>
+  <div class="acc" data-reveal>${Store.faqs().map(f=>`<div class="acc-item" data-acc><button class="acc-btn" aria-expanded="false">${esc(f.q)} ${ic('plus')}</button><div class="acc-body">${esc(f.a)}</div></div>`).join('')}</div>
+</div></section>`;
+function bindContact(){
+  const form=$('#ct-form');
+  form.addEventListener('submit',e=>{
+    e.preventDefault();const f=form.elements;let ok=true;
+    const mark=(el,bad)=>{el.closest('.field').classList.toggle('bad',bad);if(bad)ok=false};
+    mark(f.name,f.name.value.trim().length<3);
+    mark(f.phone,!/^(\+?91[\-\s]?)?[6-9]\d{9}$/.test(f.phone.value.replace(/[\s\-]/g,'')));
+    if(!ok)return;
+    Store.add({id:uid(),date:Date.now(),status:'New',source:'Contact Page',name:f.name.value.trim(),phone:f.phone.value.trim(),qualification:f.qualification.value||'—',stream:'',marks:'',course:f.course.value||'—',location:'—',need:'Contact Enquiry',message:f.message.value.trim()});
+    form.outerHTML=SENT_HTML(f.name.value.trim());
+    toast('Enquiry sent — thank you!');
+  });
+  $$('#app [data-acc]').forEach(row=>{const b=row.querySelector('.acc-btn');b.addEventListener('click',()=>{const o=row.classList.toggle('open');b.setAttribute('aria-expanded',o)})});
+}
+
+/* ---------- ADMIN ---------- */
+const STATUSES=['New','Contacted','Counselling Scheduled','Follow-up','Converted','Closed'];
+view.admin=()=>{
+  if(sessionStorage.vistora_admin!=='1')return adminGateHTML();
+  return adminShell('dash',`
+    <div class="adm-top"><h1 class="serif">Dashboard</h1><span class="badge outline">Local demo data — connect Supabase for production</span></div>
+    <div class="stat-row" id="ad-stats"></div>
+    <h2 class="serif" style="font-size:22px;margin-bottom:14px">Recent enquiries</h2>
+    <div id="ad-recent"></div>`);
+};
+function adminGateHTML(){return `
+<div style="min-height:90vh;display:flex;align-items:center;justify-content:center;padding:20px">
+  <div class="panel" style="max-width:420px;width:100%;text-align:center;padding:44px 34px">
+    <div style="width:54px;height:54px;margin:0 auto 20px;border:1px solid var(--line);border-radius:14px;display:flex;align-items:center;justify-content:center;color:var(--gold-2)">${ic('shield')}</div>
+    <h1 class="serif" style="font-size:26px;margin-bottom:8px">Vistora Admin</h1>
+    <p class="small-note" style="margin-bottom:22px">Restricted area. Demo passcode: <code>vistora2025</code> — replace with real authentication (Supabase Auth) in production.</p>
+    <form id="gate"><div class="field"><input class="input" type="password" id="gate-code" placeholder="Enter passcode" autocomplete="current-password"></div>
+    <button class="btn btn-navy" style="width:100%">Enter Dashboard</button></form>
+    <a href="#/" class="small-note" style="display:inline-block;margin-top:18px;color:var(--mut)">← Back to website</a>
+  </div>
+</div>`}
+function adminShell(tab,inner){
+  const tabs=[['dash','Dashboard','grid'],['leads','Students / Leads','users'],['faqs','FAQs','chat'],['content','Website Content','file']];
+  return `<div class="adm page-in">
+  <aside class="adm-side">
+    <a class="brand" href="#/"><svg viewBox="0 0 24 24" style="width:22px;height:22px;color:var(--gold)"><path fill="currentColor" d="M12 1l2.8 8.2L23 12l-8.2 2.8L12 23l-2.8-8.2L1 12l8.2-2.8z"/></svg><span><b style="font-size:17px">VISTORA</b><small>ADMIN</small></span></a>
+    <nav>${tabs.map(t=>`<button data-atab="${t[0]}" class="${tab===t[0]?'on':''}">${ic(t[2])}${t[1]}</button>`).join('')}</nav>
+    <div style="margin-top:auto;display:grid;gap:8px;padding-top:20px">
+      <a href="#/" style="display:flex;gap:10px;align-items:center;padding:12px 14px;font:600 14px var(--f-b);color:var(--mut-l);text-decoration:none">${ic('back')} Back to site</a>
+      <button id="ad-out" style="display:flex;gap:10px;align-items:center;padding:12px 14px;font:600 14px var(--f-b);color:var(--mut-l);text-align:left">${ic('close')} Log out</button>
+    </div>
+  </aside>
+  <div class="adm-main">${inner}</div></div>`;
+}
+function statusChip(s){return `<span class="badge st-${s.replace(/\s/g,'')}">${esc(s)}</span>`}
+function bindAdmin(tab){
+  if(!$('#gate'))return bindAdminInner(tab);
+  $('#gate').addEventListener('submit',e=>{
+    e.preventDefault();
+    if($('#gate-code').value===ADMIN_CODE){sessionStorage.vistora_admin='1';render()}
+    else{toast('Incorrect passcode');$('#gate-code').value=''}
+  });
+}
+function bindAdminInner(tab){
+  $$('[data-atab]').forEach(b=>b.addEventListener('click',()=>{location.hash='#/admin'+(b.dataset.atab!=='dash'?'/'+b.dataset.atab:'');render()}));
+  $('#ad-out')?.addEventListener('click',()=>{sessionStorage.removeItem('vistora_admin');render()});
+  if(tab==='dash')bindDash();
+  if(tab==='leads')bindLeads();
+  if(tab==='faqs')bindFaqs();
+}
+view.admin_dash=()=>view.admin(); 
+/* handle #/admin/leads etc. */
+view.admin_leads=()=>{ if(sessionStorage.vistora_admin!=='1')return view.admin();
+ return adminShell('leads',`
+  <div class="adm-top"><h1 class="serif">Students / Leads</h1>
+    <div style="display:flex;gap:10px"><button class="btn btn-line btn-sm" id="ad-csv">${ic('download')} Export CSV</button><button class="btn btn-line btn-sm" id="ad-seed">Load sample leads (demo)</button></div></div>
+  <div class="adm-filters">
+    <input class="input grow" id="ad-q" placeholder="Search name, phone, course…">
+    <select class="select" id="ad-st"><option value="">All Statuses</option>${STATUSES.map(s=>`<option>${s}</option>`).join('')}</select>
+    <select class="select" id="ad-ty"><option value="">All Enquiry Types</option>${[...NEED_OPTIONS,'Contact Enquiry'].map(s=>`<option>${s}</option>`).join('')}</select>
+  </div>
+  <div id="ad-tbl"></div>`);};
+view.admin_faqs=()=>{ if(sessionStorage.vistora_admin!=='1')return view.admin();
+ return adminShell('faqs',`
+  <div class="adm-top"><h1 class="serif">FAQs</h1><button class="btn btn-navy btn-sm" id="faq-add">${ic('plus')} Add question</button></div>
+  <p class="small-note" style="margin-bottom:20px">These render on the public Contact page. Changes save to local storage (Supabase <code>faqs</code> table in production).</p>
+  <div id="faq-list" style="display:grid;gap:14px;max-width:760px"></div>`);};
+view.admin_content=()=>{ if(sessionStorage.vistora_admin!=='1')return view.admin();
+ const items=[
+  ['WhatsApp number & contact details','CONFIG object at the top of the script — currently a placeholder number.','CONFIG.whatsapp / phone / email'],
+  ['Photography','All images are picsum placeholders. Replace with real photography of Kerala students and sessions.','<img> tags'],
+  ['College data','8 sample entries are clearly badged. Replace with verified institutional information.','DATA.colleges'],
+  ['Testimonials','Honest dashed placeholders on the Home page await real student reviews (with permission).','Home → Testimonials'],
+  ['Legal pages','Privacy Policy & Terms are templates — have them reviewed by legal counsel.','Legal modals'],
+  ['Admin authentication','Demo passcode gate. Move to Supabase Auth + profiles.role for production.','view.admin / ADMIN_CODE']];
+ return adminShell('content',`
+  <div class="adm-top"><h1 class="serif">Website Content</h1></div>
+  <p class="small-note" style="margin-bottom:22px">Checklist of everything to replace before launch — trust before polish.</p>
+  <div style="display:grid;gap:12px;max-width:820px">${items.map(i=>`<div class="panel" style="padding:20px 24px">
+    <div style="display:flex;justify-content:space-between;gap:14px;align-items:baseline;flex-wrap:wrap"><b style="font:800 15px var(--f-b)">${i[0]}</b><code class="small-note">${i[2]}</code></div>
+    <p style="font-size:14px;color:var(--mut);margin-top:6px">${i[1]}</p></div>`).join('')}</div>`);};
+
+function bindDash(){
+  const leads=Store.all();
+  const count=s=>leads.filter(l=>l.status===s).length;
+  $('#ad-stats').innerHTML=[['Total Enquiries',leads.length],['New',count('New')],['Follow-up',count('Follow-up')],['Converted',count('Converted')]]
+    .map(s=>`<div class="stat"><b>${s[1]}</b><span>${s[0]}</span></div>`).join('');
+  const recent=leads.slice(0,5);
+  $('#ad-recent').innerHTML=recent.length?`<div class="tbl-wrap"><table><thead><tr><th>Name</th><th>Need</th><th>Date</th><th>Status</th></tr></thead>
+    <tbody>${recent.map(l=>`<tr><td><b>${esc(l.name)}</b><div class="small-note">${esc(l.phone)}</div></td><td>${esc(l.need)}</td><td>${fmtDate(l.date)}</td><td>${statusChip(l.status)}</td></tr>`).join('')}</tbody></table></div>`
+    :emptyLeads();
+}
+function emptyLeads(){return `<div class="tbl-wrap"><div class="empty">${ic('users')}<p>No enquiries yet.</p><p class="small-note">Submissions from the website forms appear here instantly. Use "Load sample leads" to preview the workflow.</p></div></div>`}
+const fmtDate=d=>new Date(d).toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric'});
+function leadRow(l){
+  return `<tr data-lid="${l.id}">
+    <td><b>${esc(l.name)}</b></td>
+    <td><a href="https://wa.me/${l.phone.replace(/\D/g,'').replace(/^91/,'')?(/^91/.test(l.phone.replace(/\D/g,''))?l.phone.replace(/\D/g,''):'91'+l.phone.replace(/\D/g,'')):''}" target="_blank" rel="noopener" style="text-decoration:none">${esc(l.phone)}</a></td>
+    <td>${esc(l.qualification)}</td><td>${esc(l.course||'—')}</td><td>${esc(l.location)}</td><td>${esc(l.need)}</td>
+    <td style="white-space:nowrap">${fmtDate(l.date)}</td>
+    <td><select class="status-sel st-${l.status.replace(/\s/g,'')}" data-status aria-label="Status">${STATUSES.map(s=>`<option ${s===l.status?'selected':''}>${s}</option>`).join('')}</select></td>
+    <td><div class="row-act">
+      <a class="icon-btn" style="color:#1FA855" href="${waLink('Hi '+l.name.split(' ')[0]+', this is Vistora Edu regarding your counselling enquiry.')}" target="_blank" rel="noopener" aria-label="WhatsApp student">${ic('whatsapp')}</a>
+      <button class="icon-btn danger" data-del aria-label="Delete enquiry">${ic('trash')}</button></div></td></tr>`;
+}
+function bindLeads(){
+  const st={q:'',s:'',t:''};
+  const run=()=>{
+    const q=st.q.toLowerCase();
+    let list=Store.all().filter(l=>(!st.s||l.status===st.s)&&(!st.t||l.need===st.t)&&
+      (!q||[l.name,l.phone,l.course,l.location,l.qualification].join(' ').toLowerCase().includes(q)));
+    $('#ad-tbl').innerHTML=list.length?`<div class="tbl-wrap"><table><thead><tr><th>Name</th><th>Phone</th><th>Qualification</th><th>Interested Course</th><th>Location</th><th>Enquiry Type</th><th>Date</th><th>Status</th><th></th></tr></thead>
+      <tbody>${list.map(leadRow).join('')}</tbody></table></div><p class="small-note" style="margin-top:12px">${list.length} record${list.length>1?'s':''}</p>`:emptyLeads();
+    $$('#ad-tbl [data-status]').forEach(sel=>sel.addEventListener('change',()=>{
+      Store.setStatus(sel.closest('tr').dataset.lid,sel.value);
+      sel.className='status-sel st-'+sel.value.replace(/\s/g,'');toast('Status updated → '+sel.value)}));
+    $$('#ad-tbl [data-del]').forEach(btn=>btn.addEventListener('click',()=>{
+      if(btn.dataset.arm){Store.remove(btn.closest('tr').dataset.lid);toast('Lead deleted');run()}
+      else{btn.dataset.arm='1';btn.title='Click again to confirm';toast('Click delete again to confirm');setTimeout(()=>delete btn.dataset.arm,3000)}}));
+  };
+  $('#ad-q').addEventListener('input',e=>{st.q=e.target.value;run()});
+  $('#ad-st').addEventListener('change',e=>{st.s=e.target.value;run()});
+  $('#ad-ty').addEventListener('change',e=>{st.t=e.target.value;run()});
+  $('#ad-csv').addEventListener('click',()=>{
+    const rows=Store.all();if(!rows.length)return toast('No leads to export');
+    const cols=['name','phone','qualification','stream','marks','course','location','need','status','date','source'];
+    const csv=[cols.join(','),...rows.map(r=>cols.map(c=>`"${String(r[c]??'').replace(/"/g,'""')}"`).join(','))].join('\n');
+    const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='vistora-leads.csv';a.click();toast('CSV exported')});
+  $('#ad-seed').addEventListener('click',()=>{
+    const names=[['Arjun Menon','9847011101','Plus Two (+2)','Science','92%','Engineering','Ernakulam','Course Selection'],
+    ['Fathima Rasheed','9847022202','Plus Two (+2)','Commerce','88%','Commerce & Finance','Kozhikode','College Selection'],
+    ['Devika S Nair','9847033303','Degree (UG)','Science','8.2 CGPA','Not sure yet','Thiruvananthapuram','Career Guidance'],
+    ['Mohammed Sinan','9847044404','Plus Two (+2)','Science','85%','Nursing & Allied Health','Malappuram','Admission Assistance'],
+    ['Ananya Pillai','9847055505','After 10th','','—','Not sure yet','Kottayam','Not Sure Yet']];
+    names.forEach((n,i)=>Store.add({id:uid(),date:Date.now()-i*86400000,status:['New','Contacted','Follow-up','Converted','New'][i],source:'Sample (demo)',name:n[0],phone:n[1],qualification:n[2],stream:n[3],marks:n[4],course:n[5],location:n[6],need:n[7]}));
+    toast('Sample leads loaded (clearly marked as demo)');run()});
+  run();
+}
+function bindFaqs(){
+  const run=()=>{
+    const faqs=Store.faqs();
+    $('#faq-list').innerHTML=faqs.map((f,i)=>`<div class="panel" data-fi="${i}" style="padding:18px 22px">
+      <div class="field"><label>Question</label><input class="input fq" value="${esc(f.q)}"></div>
+      <div class="field"><label>Answer</label><textarea class="textarea fa" style="min-height:70px">${esc(f.a)}</textarea></div>
+      <div style="display:flex;gap:10px"><button class="btn btn-navy btn-sm" data-save>Save</button><button class="btn btn-line btn-sm" data-rm>${ic('trash')} Remove</button></div></div>`).join('');
+    $$('#faq-list [data-save]').forEach(b=>b.addEventListener('click',()=>{
+      const box=b.closest('[data-fi]');const faqs=Store.faqs();
+      faqs[+box.dataset.fi]={q:box.querySelector('.fq').value,a:box.querySelector('.fa').value};
+      Store.saveFaqs(faqs);toast('FAQ saved — live on Contact page')}));
+    $$('#faq-list [data-rm]').forEach(b=>b.addEventListener('click',()=>{
+      const faqs=Store.faqs();faqs.splice(+b.closest('[data-fi]').dataset.fi,1);Store.saveFaqs(faqs);run();toast('FAQ removed')}));
+  };
+  $('#faq-add').addEventListener('click',()=>{const f=Store.faqs();f.push({q:'New question?',a:'Answer here.'});Store.saveFaqs(f);run()});
+  run();
+}
+
+/* ---------------- ROUTER ---------------- */
+const ROUTES={'':view.home,home:view.home,courses:view.courses,colleges:view.colleges,career:view.career,admissions:view.admissions,about:view.about,contact:view.contact,admin:view.admin,'admin/leads':view.admin_leads,'admin/faqs':view.admin_faqs,'admin/content':view.admin_content};
+const TITLES={home:'Vistora Edu — Course, College & Career Guidance in Kerala | Your Future. Your Choice.',courses:'Find Courses After Plus Two — Course Selection Guidance Kerala | Vistora Edu',colleges:'College Selection & Admission Guidance Kerala | Vistora Edu',career:'Career Guidance & Counselling for Students in Kerala | Vistora Edu',admissions:'Admission Assistance & Guidance Kerala | Vistora Edu',about:'About Vistora Edu — Guidance Built Around You',contact:'Contact Vistora Edu — Get Free Counselling in Kerala',admin:'Vistora Admin'};
+const NAV=[['Home','#/','home'],['Courses','#/courses','courses'],['Colleges','#/colleges','colleges'],['Career Guidance','#/career','career'],['Admissions','#/admissions','admissions'],['About','#/about','about'],['Contact','#/contact','contact']];
+
+function parseHash(){const h=location.hash.replace(/^#\/?/,'');const [p,q]=h.split('?');return{path:p||'home',params:new URLSearchParams(q||'')}}
+function render(){
+  const {path,params}=parseHash();
+  const key=path.startsWith('admin')?'admin':(ROUTES[path]?path:'home');
+  const isAdmin=path.startsWith('admin');
+  $('#site-head').style.display=isAdmin?'none':'';
+  $('#site-foot').style.display=isAdmin?'none':'';
+  $('#wa-float').style.display=isAdmin?'none':'';
+  document.title=TITLES[isAdmin?'admin':path]||TITLES.home;
+  const fn=ROUTES[path]||view.home;
+  $('#app').innerHTML=fn(params);
+  $('#app').classList.remove('page-in');void $('#app').offsetWidth;$('#app').classList.add('page-in');
+  if(!isAdmin){
+    $('#nav-links').innerHTML=NAV.slice(0,6).map(n=>`<li><a href="${n[1]}" class="${path===n[2]?'on':''}">${n[0]}</a></li>`).join('');
+    $('#m-nav').innerHTML=NAV.map(n=>`<a href="${n[1]}" data-mlink>${n[0]}${ic('arrow')}</a>`).join('');
+    $$('#m-nav a').forEach(a=>a.addEventListener('click',closeMenu));
+    const binders={home:bindHome,courses:bindCourses,colleges:bindColleges,career:bindCareer,contact:bindContact,admissions:()=>{},about:()=>{}};
+    (binders[path]||(()=>{}))();
+    bindLeadTriggers($('#app'));
+  } else { bindAdmin(path); }
+  initReveal();
+  bindAccordions();
+  window.scrollTo({top:0,behavior:'instant'});
+  closeMenu();
+}
+function bindAccordions(){$$('#app .acc [data-acc], #app .course-row[data-acc]').forEach(row=>{
+  const b=row.querySelector('.acc-btn');if(!b||b.dataset.bound)return;b.dataset.bound=1;
+  b.addEventListener('click',()=>{const o=row.classList.toggle('open');b.setAttribute('aria-expanded',o)})});
+}
+function initReveal(root=document){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+  $$('[data-reveal],.steps[data-steps]',root).forEach(el=>io.observe(el));
+}
+
+/* ---------------- LEAD MODAL ---------------- */
+let lastFocus=null;
+function openLead(opts={}){
+  lastFocus=document.activeElement;
+  $('#lead-body').innerHTML=leadFormHTML('modal');
+  if(opts.need){const r=$('input[value="'+opts.need+'"]',$('#lead-body'));if(r)r.checked=true}
+  if(opts.course){const s=$('#modal-course');if(s){[...s.options].forEach(o=>{if(o.text===opts.course)o.selected=true})}}
+  $('#lead-ov').classList.add('open');
+  bindForm('modal','Modal — '+(opts.need||'General'),true);
+  setTimeout(()=>$('#modal-name')?.focus(),80);
+}
+function closeLead(){$('#lead-ov').classList.remove('open');lastFocus?.focus?.()}
+function bindLeadTriggers(root){
+  $$('[data-open-lead]',root).forEach(b=>{if(b.dataset.bound)return;b.dataset.bound=1;
+    b.addEventListener('click',()=>openLead({need:b.dataset.need,course:b.dataset.course}))});
+}
+
+/* ---------------- SHELL / GLOBAL ---------------- */
+function buildShell(){
+  $('#site-foot').innerHTML=`<div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <a class="brand" href="#/"><svg viewBox="0 0 24 24" style="width:24px;height:24px;color:var(--gold)"><path fill="currentColor" d="M12 1l2.8 8.2L23 12l-8.2 2.8L12 23l-2.8-8.2L1 12l8.2-2.8z"/></svg><span><b style="color:#fff">VISTORA</b><small>EDU</small></span></a>
+        <p><b style="color:#fff">Your Future. Your Choice.</b><br>Personalised education and career guidance for students across Kerala.</p>
+        <div class="f-soc">
+          <a href="${CONFIG.instagram}" target="_blank" rel="noopener" aria-label="Instagram">${ic('instagram')}</a>
+          <a href="${CONFIG.facebook}" target="_blank" rel="noopener" aria-label="Facebook">${ic('facebook')}</a>
+          <a href="${waLink()}" target="_blank" rel="noopener" aria-label="WhatsApp">${ic('whatsapp')}</a>
+        </div>
+      </div>
+      <div><h4>Explore</h4><ul>${NAV.map(n=>`<li><a href="${n[1]}">${n[0]}</a></li>`).join('')}</ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a href="tel:${CONFIG.phone.replace(/\s/g,'')}">${ic('phone','')} ${esc(CONFIG.phone)}</a></li>
+        <li><a href="${waLink()}" target="_blank" rel="noopener">WhatsApp Us</a></li>
+        <li><a href="mailto:${CONFIG.email}">${esc(CONFIG.email)}</a></li>
+        <li><a href="${CONFIG.instagram}" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="${CONFIG.facebook}" target="_blank" rel="noopener">Facebook</a></li></ul></div>
+      <div><h4>Location</h4><p style="font-size:14.5px">Kerala, India<br>Counselling available online &amp; by phone across all districts.</p></div>
+    </div>
+    <div class="f-bottom">
+      <span>© ${new Date().getFullYear()} Vistora Edu · Made for the students of Kerala</span>
+      <span style="display:flex;gap:18px"><button data-legal="privacy">Privacy Policy</button><button data-legal="terms">Terms &amp; Conditions</button></span>
+    </div></div>`;
+  $$('[data-legal]').forEach(b=>b.addEventListener('click',()=>openLegal(b.dataset.legal)));
+
+  const wa=$('#wa-float');wa.href=waLink();
+  wa.insertAdjacentHTML('afterbegin',ic('whatsapp'));
+  $('#bar-wa').href=waLink();$('#bar-wa').innerHTML=ic('whatsapp');
+  $('#m-wa').href=waLink();$('#m-wa').innerHTML=ic('whatsapp')+' Chat on WhatsApp';
+}
+
+function closeMenu(){$('#m-menu').classList.remove('open');$('#m-menu').setAttribute('aria-hidden','true');$('#burger').setAttribute('aria-expanded','false')}
+ $('#burger').addEventListener('click',()=>{$('#m-menu').classList.add('open');$('#m-menu').setAttribute('aria-hidden','false');$('#burger').setAttribute('aria-expanded','true')});
+ $('#m-close').addEventListener('click',closeMenu);
+ $('#lead-ov').addEventListener('click',e=>{if(e.target.id==='lead-ov'||e.target.closest('[data-close]'))closeLead()});
+ $('#legal-ov').addEventListener('click',e=>{if(e.target.id==='legal-ov'||e.target.closest('[data-close-legal]'))$('#legal-ov').classList.remove('open')});
+ $('#slide-ov').addEventListener('click',closeSlide);
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeLead();closeSlide();closeMenu();$('#legal-ov').classList.remove('open')}});
+document.addEventListener('click',e=>{if(e.target.closest('[data-close-slide]'))closeSlide()});
+
+window.addEventListener('scroll',()=>{
+  $('#site-head').classList.toggle('scrolled',scrollY>24);
+  $('#m-bar').classList.toggle('show',scrollY>560);
+  document.body.classList.toggle('has-mbar',scrollY>560);
+},{passive:true});
+window.addEventListener('hashchange',render);
+
+buildShell();
+render();
+</script>
+</body>
+</html>
